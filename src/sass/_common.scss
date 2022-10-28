@@ -1,1 +1,42 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  min-width: 1440px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+}
