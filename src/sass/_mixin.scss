@@ -1,0 +1,14 @@
+@mixin flex($j: center, $a: center) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+}
+@mixin font($w, $s, $h) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $h;
+}
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+}
