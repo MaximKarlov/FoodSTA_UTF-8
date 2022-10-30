@@ -19,12 +19,12 @@
   }
 }
 @mixin tab-max {
-  @media screen and (max-width: 1249.5px) {
+  @media screen and (max-width: 1279.5px) {
     @content;
   }
 }
 @mixin desk-min {
-  @media screen and (min-width: 1250px) {
+  @media screen and (min-width: 1280px) {
     @content;
   }
 }
