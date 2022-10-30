@@ -1,8 +1,7 @@
 .footer {
   width: 100%;
   margin: 0 auto;
-  background-image: url(../img/background/footer/mobile_bgi_bottom.jpg),
-    url(../img/background/footer/mobile_bgi_left.jpg),
+  background-image: url(../img/background/footer/mobile_bgi_bottom.jpg), url(../img/background/footer/mobile_bgi_left.jpg),
     url(../img/background/footer/mobile_bgi_right.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom, left, right;
@@ -63,7 +62,7 @@
 }
 .footer-nav__link {
   @include font(400, 14, 1.17);
-  color: $navigation-color;
+  color: #000000;
 }
 .footer-subs {
   margin-top: 40px;
@@ -77,7 +76,7 @@
   display: flex;
   flex-direction: column;
   @include font(400, 17, 1.5);
-  color: $main-color;
+  color: #2c2c2c;
   @media screen and(min-width:768px) {
     width: 280px;
   }
@@ -86,13 +85,13 @@
   width: 100%;
   height: 42px;
   border-style: none;
-  border: solid 2px $yellow-main;
+  border: solid 2px #ffe550;
   border-radius: 30px;
   padding-left: 12px;
   &:hover,
   &:focus,
   &:active {
-    border-color: $dark-green;
+    border-color: #7eb101;
   }
   @media screen and(min-width:768px) {
     width: 280px;
@@ -102,7 +101,7 @@
   display: block;
   width: 100px;
   height: 42px;
-  border: solid 2px $yellow-main;
+  border: solid 2px #ffe550;
   border-radius: 30px;
   float: right;
   margin-top: 20px;
