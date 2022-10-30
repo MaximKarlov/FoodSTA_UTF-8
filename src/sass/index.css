@@ -40,4 +40,26 @@ img {
 
 .container {
   margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.customers__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
 }/*# sourceMappingURL=index.css.map */
