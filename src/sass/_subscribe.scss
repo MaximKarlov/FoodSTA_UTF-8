@@ -1,0 +1,71 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.subscribe {
+    display: block;
+    padding: 17px 0;
+}
+
+.subscribe_header{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    display: flex;
+}
+
+.subscribe {
+    padding: 15px 17px;
+}
+
+.subscribe_title {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.subscribe_description {
+    font-size: 16px;
+    display: flex;
+    padding-bottom: 24px;
+    line-height: 150%;
+}
+
+.subscribe_place {
+    padding-bottom: 100px;
+    max-width: 656px;
+}
+
+.subscribe_place input {
+    color: var(--color);
+    padding: 16px;
+}
+
+.search {
+    border: 1px solid yellow;
+    margin-right: 32px;
+    width: 395px;
+}
+
+.subscribe_button {
+    border-radius: 30px;
+    padding: 11px 22px;
+    cursor: pointer;
+    background: #BBF330;;
+    border: none;
+}
+
+input[type=email i] {
+    padding: 12px 57px 12px 12px;
+    font-size: 1em;
+    border-radius: 30px;
+    color: #505050;
+    cursor: text;
+}
+
+.subscribe_image {
+    display: flex;
+}
+
+.subscribe_banan {
+    margin: -46px 0;
+}
