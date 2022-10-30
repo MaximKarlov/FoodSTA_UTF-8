@@ -21,6 +21,10 @@ p {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 svg {
   display: block;
 }
@@ -33,10 +37,6 @@ img {
 
 .section {
   padding: 100px 0;
-}
-
-.list {
-  list-style: none;
 }
 
 .container {
