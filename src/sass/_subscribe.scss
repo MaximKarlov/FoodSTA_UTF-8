@@ -1,0 +1,146 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.subscribe {
+    display: block;
+    padding: 17px 0;
+}
+
+.subscribe__header{
+    margin: 0 auto;
+    @media screen and (min-width: 400px) and (max-width: 767px) {
+        display: block;
+        max-width: 767x;
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1600px) {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 15px;
+    }
+}
+
+.subscribe__block {
+    display: block;
+}
+
+.subscribe {
+    padding: 15px 17px;
+}
+
+.subscribe__title {
+    font-weight: 700;
+    @media screen and (max-width: 768px) {
+    font-size: 28px;
+    line-height: 120%;
+}
+
+    @media screen and (min-width: 769px) and (max-width: 1600px) {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 120%;
+}
+}
+
+.subscribe__description {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1600px) {
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 24px
+}
+
+}
+
+.subscribe__place {
+    @media screen and (max-width: 434px) {
+    display: block;
+    padding-bottom: 60px;
+    max-width: 320px;
+    }
+    
+    @media screen and (min-width: 435px) and (max-width: 1600px) {
+    display: flex;
+    max-width: 656px;
+    }
+}
+
+.subscribe__place input {
+    color: var(--color);
+    padding: 16px;
+}
+
+.subscribe__input {
+    border: 1px solid yellow;
+    @media screen and (max-width: 434px) {
+        padding-bottom: 20px;
+        width: 279px;
+        max-width: 279px;
+    }
+        
+    @media screen and (min-width: 435px) and (max-width: 1600px) {
+        margin-right: 32px;
+        padding-bottom: 100px;
+        max-width: 656px;
+        width: 395px;
+    }
+}
+
+.subscribe__button {
+    border-radius: 30px;
+    padding: 11px 22px;
+    cursor: pointer;
+    background: #BBF330;;
+    border: none;
+    @media screen and (max-width: 434px) {
+        margin-left: 170px;
+    }
+}
+
+
+
+input[type=email i] {
+    font-size: 1em;
+    border-radius: 30px;
+    color: #505050;
+    cursor: text;
+    @media screen and (max-width: 434px) {
+        padding: 12px 57px 12px 12px;
+        margin-bottom: 20px;
+        display: block;
+        margin-bottom: 20px;
+        max-width: 482px;
+    }
+        
+    @media screen and (min-width: 435px) and (max-width: 1600px) {
+        display: flex;
+        padding: 12px 57px 12px 12px;
+        max-width: 786px;
+    }
+}
+
+.subscribe__image {
+    display: flex;
+}
+
+.subscribe__banan {
+
+    @media screen and (max-width: 767px) {
+        margin: 0;
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 1600px) {
+            margin: -46px 0;
+        }
+}
