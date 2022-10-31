@@ -1,3 +1,7 @@
+svg {
+  overflow: visible;
+}
+
 .container {
   @include gum {
     @include wh(100%, 1050px);
@@ -119,6 +123,7 @@
     }
 
     &__icon {
+      z-index: 999;
       fill: #7eb101;
     }
 
