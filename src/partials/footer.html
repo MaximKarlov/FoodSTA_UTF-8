@@ -1,18 +1,43 @@
 <!--FOOTER-->
-<section class="section">
-  <div class="conteiner footer">
-    <!--Logo Link-->
-    <div>
-      <a href="./index.html" class="logo-link logo-link--footer">
-        <img src="./img/svg/logo.svg" alt="LOGO">
+<section class="section footer">
+  <div class="container">
+    <div class="navi">
+      <!--Logo Link-->
+      <a href="./index.html" class="logo__link logo__link--footer">
+        <img class="logo__svg" src="./img/svg/logo.svg" alt="LOGO">
       </a>
+      <!--Navigation-->
+      <div class="footer-nav">
+        <ul class="footer-nav__list list">
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Home</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">About</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Service</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Menu</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <!--Navigation-->
-    <div class="navigation">
+    <!--Subscribe-->
+    <form class="footer-subs" name="footer-subs" autocomplete="on" novalidate>
+      <label class="footer-subs__label">
+        Subscribe
+        <input class="footer-subs__input-email" type="email" name="email" placeholder="Enter your email" />
+      </label>
+      <button class="button footer-subs__btn" type="submit">Subscribe</button>
+    </form>
+    <p class="footer-subs__agreement">By subscribing you agree to with our
+      <a class="privacy-policy__link" href="https://policies.google.com/privacy?hl=en-US">
+        Privacy Policy</a>
+    </p>
 
-
+    <!--Footer-link-->
+    <div class="footer-link">
+      <ul class="footer-link__list list">
+        <li class="footer-link__item"><a class="footer-link__link" href="#">Privacy Policy</a></li>
+        <li class="footer-link__item"><a class="footer-link__link" href="#">Terms of Service</a></li>
+        <li class="footer-link__item"><a class="footer-link__link" href="#">Cookies Settings</a></li>
+      </ul>
     </div>
-
-
+    <p class="reserved">2022 FoodSta. All right reserved.</p>
   </div>
 </section>
