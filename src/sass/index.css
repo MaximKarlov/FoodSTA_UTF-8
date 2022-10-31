@@ -20,6 +20,10 @@ p {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 svg {
   display: block;
 }
@@ -34,10 +38,34 @@ img {
   padding: 100px 0;
 }
 
-.list {
-  list-style: none;
-}
-
 .container {
   margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.customers__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+}
+
+.customers__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
 }/*# sourceMappingURL=index.css.map */
