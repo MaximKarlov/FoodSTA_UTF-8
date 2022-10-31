@@ -9,9 +9,9 @@
 
 .subscribe__header{
     margin: 0 auto;
-    @media screen and (min-width: 400px) and (max-width: 767px) {
+    @include mob-max {
         display: block;
-        max-width: 767x;
+        width: 100%;
     }
     
     @media screen and (min-width: 768px) and (max-width: 1600px) {
@@ -32,7 +32,8 @@
 
 .subscribe__title {
     font-weight: 700;
-    @media screen and (max-width: 768px) {
+
+    @include mob-max {
     font-size: 28px;
     line-height: 120%;
 }
@@ -47,7 +48,7 @@
 .subscribe__description {
     display: flex;
 
-    @media screen and (max-width: 768px) {
+    @include mob-max {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -64,35 +65,40 @@
 }
 
 .subscribe__place {
-    @media screen and (max-width: 434px) {
+    @include mob-max {
     display: block;
     padding-bottom: 60px;
-    max-width: 320px;
     }
     
-    @media screen and (min-width: 435px) and (max-width: 1600px) {
+    @media screen and (min-width: 541px) and (max-width: 1600px) {
     display: flex;
-    max-width: 656px;
+    width: 100%;
     }
 }
 
-.subscribe__place input {
-    color: var(--color);
-    padding: 16px;
+.subscribe__form {
+    @include gum {
+        display: block;
+    }
+        
+    @media screen and (min-width: 541px) and (max-width: 1600px) {
+        display: flex;
+    }
 }
 
 .subscribe__input {
     border: 1px solid yellow;
-    @media screen and (max-width: 434px) {
-        padding-bottom: 20px;
-        width: 279px;
-        max-width: 279px;
+    padding: 16px;
+    border-radius: 30px;
+    padding: 12px 57px 12px 12px;
+    width: 100%;
+
+    @media screen and (max-width: 540px) {
+        margin-bottom: 20px;
     }
         
-    @media screen and (min-width: 435px) and (max-width: 1600px) {
+    @media screen and (min-width: 541px) and (max-width: 1600px) {
         margin-right: 32px;
-        padding-bottom: 100px;
-        max-width: 656px;
         width: 395px;
     }
 }
@@ -103,31 +109,15 @@
     cursor: pointer;
     background: #BBF330;;
     border: none;
-    @media screen and (max-width: 434px) {
-        margin-left: 170px;
-    }
-}
 
-
-
-input[type=email i] {
-    font-size: 1em;
-    border-radius: 30px;
-    color: #505050;
-    cursor: text;
-    @media screen and (max-width: 434px) {
-        padding: 12px 57px 12px 12px;
-        margin-bottom: 20px;
-        display: block;
-        margin-bottom: 20px;
-        max-width: 482px;
-    }
-        
-    @media screen and (min-width: 435px) and (max-width: 1600px) {
+    @include mob-max {
         display: flex;
-        padding: 12px 57px 12px 12px;
-        max-width: 786px;
+        margin-left: auto;
     }
+
+    // @media screen and (min-width: 768px) and (max-width: 1600px) {
+    //     // margin: -46px 0;
+    // }
 }
 
 .subscribe__image {
@@ -136,7 +126,7 @@ input[type=email i] {
 
 .subscribe__banan {
 
-    @media screen and (max-width: 767px) {
+    @include mob-max {
         margin: 0;
         }
         
