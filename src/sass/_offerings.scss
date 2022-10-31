@@ -1,0 +1,153 @@
+.container {
+  @include gum {
+    @include wh(100%, 1050px);
+    background-image: url(../img/offerings/off-ground-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: url(../img/offerings/off-ground-min-2x.jpg);
+    }
+
+    // &__img {
+    //   display: block;
+    //   margin-top: 0;
+    //   margin-right: auto;
+    //   margin-bottom: 60px;
+    //   margin-left: auto;
+    // }
+
+    &__wrapper {
+      display: flex;
+
+      align-items: baseline;
+    }
+
+    &__button {
+      @include wh(106px, 40px);
+
+      margin-right: 24px;
+
+      background: #ffffff;
+
+      border: 2px solid #7eb101;
+      border-radius: 30px;
+    }
+
+    &__link {
+      @include font(400px, 13.7px, 1.5);
+
+      color: #000000;
+
+      text-decoration: none;
+    }
+  }
+
+  @include mob-min {
+    width: 480px;
+    @include wh(100%, 1050px);
+    background-image: url(../img/offerings/off-ground-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: url(../img/offerings/off-ground-mob-2x.jpg);
+    }
+
+    &__img {
+      display: block;
+      margin-top: 70px;
+      margin-right: auto;
+      margin-bottom: 60px;
+      margin-left: auto;
+    }
+  }
+}
+
+.section {
+  @include gum {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    &__img {
+      display: block;
+      margin-top: 0;
+      margin-right: auto;
+      margin-bottom: 60px;
+      margin-left: auto;
+    }
+
+    &__title {
+      @include font(700px, 28px, 1.18);
+
+      margin-bottom: 28px;
+    }
+
+    &__text {
+      @include font(400px, 14px, 1.14);
+
+      margin-bottom: 28px;
+    }
+  }
+
+  @include mob-min {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    &__title {
+      @include font(700px, 28px, 1.18);
+
+      margin-bottom: 28px;
+    }
+
+    &__text {
+      @include font(400px, 14px, 1.14);
+
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.offerings {
+  @include gum {
+    &__item {
+      margin-bottom: 28px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__icon {
+      fill: #7eb101;
+    }
+
+    &__wrapper {
+      @include wh(48px, 48px);
+      display: flex;
+      border-radius: 50%;
+
+      justify-content: center;
+      align-items: center;
+
+      background-color: #fff;
+      background-repeat: no-repeat;
+
+      margin-bottom: 8px;
+    }
+  }
+
+  @include mob-min {
+    &__item {
+      margin-bottom: 28px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__icon {
+      fill: #7eb101;
+    }
+  }
+}
