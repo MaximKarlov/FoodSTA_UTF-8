@@ -1,43 +1,51 @@
 <!--FOOTER-->
 <section class="section footer">
   <div class="container">
-    <div class="navi">
-      <!--Logo Link-->
-      <a href="./index.html" class="logo__link logo__link--footer">
-        <img class="logo__svg" src="./img/svg/logo.svg" alt="LOGO">
-      </a>
-      <!--Navigation-->
-      <div class="footer-nav">
-        <ul class="footer-nav__list list">
-          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Home</a></li>
-          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">About</a></li>
-          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Service</a></li>
-          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Menu</a></li>
-          <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Contact</a></li>
-        </ul>
+    <div class="desktop">
+      <div class="navi">
+        <!--Logo Link-->
+        <a href="./index.html"
+          ><svg class="logo-link logo-link--footer" width="66" height="52">
+            <use href="./img/svg/svg-sprite.svg#logo"></use></svg
+        ></a>
+        <!--Navigation-->
+        <div class="footer-nav">
+          <ul class="footer-nav__list list">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Home</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link link">About</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Service</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Menu</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link link">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <!--Subscribe-->
-    <form class="footer-subs" name="footer-subs" autocomplete="on" novalidate>
-      <label class="footer-subs__label">
-        Subscribe
-        <input class="footer-subs__input-email" type="email" name="email" placeholder="Enter your email" />
-      </label>
-      <button class="button footer-subs__btn" type="submit">Subscribe</button>
-    </form>
-    <p class="footer-subs__agreement">By subscribing you agree to with our
-      <a class="privacy-policy__link" href="https://policies.google.com/privacy?hl=en-US">
-        Privacy Policy</a>
-    </p>
 
-    <!--Footer-link-->
+      <!--Subscribe-->
+      <div class="subscribe">
+        <form class="footer-subs" name="footer-subs" autocomplete="on" novalidate>
+          <label class="footer-subs__label">
+            Subscribe
+            <input class="footer-subs__input-email" type="email" name="email" placeholder="Enter your email" />
+          </label>
+          <button class="button footer-subs__btn" type="submit">Subscribe</button>
+        </form>
+
+        <p class="agreement">
+          By subscribing you agree to with our
+          <a class="privacy-policy-link" href="https://policies.google.com/privacy?hl=en-US"> Privacy Policy</a>
+        </p>
+      </div>
+
+      <!--Footer-link-->
+    </div>
+
     <div class="footer-link">
       <ul class="footer-link__list list">
         <li class="footer-link__item"><a class="footer-link__link" href="#">Privacy Policy</a></li>
         <li class="footer-link__item"><a class="footer-link__link" href="#">Terms of Service</a></li>
         <li class="footer-link__item"><a class="footer-link__link" href="#">Cookies Settings</a></li>
       </ul>
+      <p class="reserved">2022 FoodSta. All right reserved.</p>
     </div>
-    <p class="reserved">2022 FoodSta. All right reserved.</p>
   </div>
 </section>
