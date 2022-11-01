@@ -9,7 +9,7 @@
   opacity: 1;
   transition-property: opacity;
   transition-duration: 250ms;
-  transition-timing-function: $all-hovfoc-function;
+  // transition-timing-function: $all-hovfoc-function;
 }
 
 .backdrop--is-hidden1 {
@@ -108,7 +108,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include font(500, 13, 1.5);
+  @include font2(500, 13, 1.5);
   color: $modal-text-color;
 
   background: $modal-btn-color;
