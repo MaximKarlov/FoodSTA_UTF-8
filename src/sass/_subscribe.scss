@@ -4,7 +4,7 @@
 
 .subscribe {
     display: block;
-    padding: 17px 0;
+    padding: 0 17px;
 }
 
 .subscribe__header{
@@ -24,10 +24,6 @@
 
 .subscribe__block {
     display: block;
-}
-
-.subscribe {
-    padding: 15px 17px;
 }
 
 .subscribe__title {
@@ -122,16 +118,12 @@
         display: flex;
         margin-left: auto;
     }
-
-    // @media screen and (min-width: 768px) and (max-width: 1600px) {
-    //     // margin: -46px 0;
-    // }
 }
 
 .subscribe__image {
     display: flex;
     @include mob-max {
-        display: flex;
+        padding-bottom: 20px;
         flex-direction: row-reverse;
     }
 }
