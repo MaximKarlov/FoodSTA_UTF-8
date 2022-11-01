@@ -7,12 +7,12 @@
 }
 
 .customers__title {
-  @include font(700, 28px, 1.18);
+  @include font(700, 28, 1.18);
   margin-bottom: 20px;
 }
 
 .customers__text {
-  @include font(400, 14px, 1.14);
+  @include font(400, 14, 1.14);
   margin-bottom: 32px;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .customers__comment {
-  @include font(700, 16px, 1.19);
+  @include font(700, 16, 1.19);
   margin-bottom: 40px;
 }
 
@@ -65,8 +65,8 @@
   border-right: 0.85px solid var(--btn-menu);
 }
 .avatar__name {
-  @include font(500, 14px, 1.5);
+  @include font(500, 14, 1.5);
 }
 .avatar__status {
-  @include font(400, 14px, 1.5);
+  @include font(400, 14, 1.5);
 }
