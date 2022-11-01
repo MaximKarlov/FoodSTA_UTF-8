@@ -182,9 +182,16 @@
       margin-right: 24px;
 
       background: #ffffff;
+      cursor: pointer;
 
       border: 2px solid #7eb101;
       border-radius: 30px;
+    }
+
+    &__button:hover,
+    &__button:focus,
+    &__button:active {
+      border: 2px solid #597d00;
     }
 
     &__link {
