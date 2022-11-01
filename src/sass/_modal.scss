@@ -56,15 +56,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex;
 }
 
 .backdrop__title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
+  @include font(700, 24, 1.2);
   color: $modal-text-color;
 
   text-align: center;
@@ -72,9 +68,8 @@
 }
 
 .submit-form__label {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.4;
+  @include font(500, 16, 1.4);
+
   color: $modal-text-color;
   margin-bottom: 2px;
   margin-left: 12px;
@@ -87,34 +82,64 @@
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   padding-left: 12px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(400, 16, 1.25);
+
   margin-bottom: 24px;
 }
 
+.submit-form__input:focus {
+  border: 1px solid tomato;
+  outline: none;
+}
+
 .submit-form__input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(400, 16, 1.25);
+
   color: $modal-placeholder-color;
 }
 
 .submit-form__btn-submit {
-  margin-top: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 38px;
   padding-left: 38px;
+  @include flex;
+  margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
 
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
+  @include font(500, 13, 1.5);
   color: $modal-text-color;
 
   background: $modal-btn-color;
   border: 2px solid $modal-btn-border;
   border-radius: 30px;
+}
+
+.submit-form__btn-submit--right {
+  background: $modal-rghtbtn-color;
+}
+
+.submit-form__btn-submit--error {
+  background: $modal-btn-color;
+  border: 2px solid $modal-errbtn-border;
+}
+
+.submit-form__input-alert {
+  @include font(500, 11, 1.4);
+  color: $modal-errbtn-border;
+  margin-left: 12px;
+}
+
+.submit-form__input-alert::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.submit-form__input-requirement {
+  @include font(500, 13, 1.4);
+  color: $modal-errbtn-border;
+  margin-left: 12px;
 }

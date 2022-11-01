@@ -38,7 +38,7 @@
             id="phone"
             placeholder="+38(0_ _) _ _ _   _ _   _ _"
             required
-            pattern="[A-Za-z]{3,25}"
+            pattern="^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$"
             title=" This phone must be in the format  099 000 00 00"
           />
         </div>
@@ -54,7 +54,7 @@
             id="email"
             placeholder="example@gmail.com"
             required
-            pattern="[A-Za-z]{3,25}"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             title="Please enter a valid email address"
           />
         </div>
