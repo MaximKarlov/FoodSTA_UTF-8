@@ -1,9 +1,11 @@
 .offerings {
   // 320px mobile responsive
 
-  padding-top: 40px;
-
   @include gum {
+    width: 100%;
+
+    padding-top: 40px;
+
     @include wh(100%, 1050px);
     background-image: url(../img/offerings/off-ground-min.png);
     background-repeat: no-repeat;
@@ -25,18 +27,18 @@
       margin-left: auto;
     }
 
-    &__content {
-      padding-left: 20px;
-    }
-
     &__title {
       @include font(700px, 28px, 1.17);
+
+      max-width: 280px;
 
       margin-bottom: 28px;
     }
 
     &__advertising {
       @include font(400px, 14px, 1.17);
+
+      max-width: 272px;
 
       margin-bottom: 28px;
     }
@@ -83,7 +85,9 @@
     }
 
     &__button {
-      @include wh(106px, 40px);
+      @include font(500px, 13px, 1.5);
+
+      padding: 10px 22px;
 
       margin-right: 24px;
 
@@ -91,6 +95,12 @@
 
       border: 2px solid #7eb101;
       border-radius: 30px;
+    }
+
+    &__button:hover,
+    &__button:focus,
+    &__button:active {
+      border: 2px solid #597d00;
     }
 
     &__link {
@@ -130,18 +140,18 @@
       margin-left: auto;
     }
 
-    &__content {
-      padding-left: 20px;
-    }
-
     &__title {
       @include font(700px, 28px, 1.17);
+
+      max-width: 280px;
 
       margin-bottom: 28px;
     }
 
     &__advertising {
       @include font(400px, 14px, 1.17);
+
+      min-width: 272px;
 
       margin-bottom: 28px;
     }
@@ -188,12 +198,13 @@
     }
 
     &__button {
-      @include wh(106px, 40px);
+      @include font(500px, 13px, 1.5);
+
+      padding: 10px 22px;
 
       margin-right: 24px;
 
       background: #ffffff;
-      cursor: pointer;
 
       border: 2px solid #7eb101;
       border-radius: 30px;
@@ -236,7 +247,7 @@
     }
 
     &__content {
-      padding-left: 32px;
+      padding-left: 12px;
     }
 
     &__title {
@@ -298,6 +309,10 @@
 
     &__content {
       padding-left: 0;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 67px;
     }
 
     &__link {
