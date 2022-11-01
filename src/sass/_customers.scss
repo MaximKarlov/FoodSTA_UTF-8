@@ -51,7 +51,6 @@
   @include tab-min {
     @include font(700, 42px, 1.17);
   }
-
 }
 
 .customers__text {
@@ -61,7 +60,6 @@
   @include tab-min {
     @include font(400, 16px, 1.19);
   }
-
 }
 
 .customers__list {
@@ -69,10 +67,10 @@
     display: flex;
     justify-content: space-evenly;
   }
-  
-   @include desk-min {
-  justify-content: flex-start;
- }
+
+  @include desk-min {
+    justify-content: flex-start;
+  }
 }
 
 .customers__item {
@@ -90,11 +88,13 @@
     padding: 12px;
   }
 
-   @include desk-min {
-  max-width: 501px;
-   padding: 14px;
- }
-
+  @include desk-min {
+    max-width: 501px;
+    padding: 14px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 .customers__item:not(:last-child) {
@@ -105,9 +105,9 @@
     margin-right: 32px;
   }
 
-   @include desk-min {
-  margin-right: 139px;
- }
+  @include desk-min {
+    margin-right: 139px;
+  }
 }
 
 .customers__icons {
