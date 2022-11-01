@@ -1,0 +1,68 @@
+<!--Modal-->
+<div data-modal class="backdrop backdrop--is-hidden">
+  <div class="backdrop__modal">
+    <h2 class="backdrop__title">Order Form</h2>
+
+    <div data-modal-close class="backdrop__close-btn">
+      <svg class="close-btn__icon" width="24" height="24">
+        <use href="./img/svg/modalsprite.svg#icon-modalclsbtn"></use>
+      </svg>
+    </div>
+
+    <form name="submit-form" class="submit-form" autocomplete="off">
+      <div class="submit-form__field">
+        <label class="submit-form__label" for="username">Name</label>
+        <div class="submit-form__input-wrap">
+          <input
+            class="submit-form__input"
+            name="username"
+            type="text"
+            id="username"
+            placeholder="Your name"
+            required
+            minlength="3"
+            maxlength="25"
+            pattern="[A-Za-z]{3,25}"
+            title="The name must be between 3 and 25 characters"
+          />
+        </div>
+      </div>
+
+      <div class="submit-form__field">
+        <label class="submit-form__label" for="phone">Phone number</label>
+        <div class="submit-form__input-wrap">
+          <input
+            class="submit-form__input"
+            name="phone"
+            type="tel"
+            id="phone"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            required
+            pattern="^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$"
+            title=" This phone must be in the format  099 000 00 00"
+          />
+        </div>
+      </div>
+
+      <div class="submit-form__field">
+        <label class="submit-form__label" for="email">E-mail</label>
+        <div class="submit-form__input-wrap">
+          <input
+            class="submit-form__input"
+            name="email"
+            type="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            title="Please enter a valid email address"
+          />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <button type="submit" class="submit-form__btn-submit">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
