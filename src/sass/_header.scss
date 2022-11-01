@@ -10,7 +10,46 @@
   min-height: 72px;
 }
 
+.nav-btn-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 28px;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.menu__link--current {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #bbf330;
+  @media screen and (min-width: 1280px) {
+    font-weight: 700;
+  }
+}
+
 .order-btn {
+  padding: 6px 18px;
+  background: #bbf330;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #2c2c2c;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
