@@ -1,11 +1,11 @@
 <subscribe class="subscribe">
     <div class="subscribe__header">
         <div class="subscribe__image">
-            <ul>
-                <li class="subscribe__banan">
-                    <img src="./img/banan.jpg" alt="Banan">
-                </li>
-            </ul>
+            <picture class="subscribe__banan">
+                <source srcset="./img/banan.jpg 1x, ./img/banan@2x.jpg 2x" media="(max-width: 320px)" />
+                <source srcset="./img/banan.jpg 1x, ./img/banan@2x.jpg 2x" media="(max-width: 1600px)" />
+                <img class="banan" src="./img/banan.jpg" alt="customer" />
+              </picture>
          </div>
          <div class="subscribe__block">
              <ul>
@@ -15,10 +15,9 @@
                  </li>
              </ul>
              <div class="subscribe__place">
-                <form action="#" class="subscribe__place">
+                <form action="#" class="subscribe__form">
                   <input type="email" id="emailFirst" placeholder="E-mail" class="subscribe__input" name="email">
-                  <button class="subscribe__button" type="submit">Subscribe
-                </button>
+                  <button class="subscribe__button" type="submit">Subscribe</button>
                 </form>
             </div>
          </div>
