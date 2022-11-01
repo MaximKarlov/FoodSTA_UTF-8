@@ -58,6 +58,7 @@ img {
   }
 }
 
+<<<<<<< HEAD
 .backdrop1 {
   position: fixed;
   top: 0;
@@ -182,4 +183,16 @@ img {
   background: #ffffff;
   border: 2px solid #7eb101;
   border-radius: 30px;
+=======
+.customers__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+}
+
+.customers__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+>>>>>>> main
 }/*# sourceMappingURL=index.css.map */

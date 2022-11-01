@@ -1,5 +1,15 @@
-@mixin mob-max {
+@mixin gum {
   @media screen and (max-width: 479.5px) {
+    @content;
+  }
+}
+@mixin mob-min {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin mob-max {
+  @media screen and (max-width: 767.5px) {
     @content;
   }
 }
@@ -9,20 +19,16 @@
   }
 }
 @mixin tab-max {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: 1279.5px) {
     @content;
   }
 }
 @mixin desk-min {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @content;
   }
 }
-@mixin desk-max {
-  @media screen and (max-width: 1199.5px) {
-    @content;
-  }
-}
+
 @mixin retina {
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     @content;

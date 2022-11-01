@@ -1,0 +1,7 @@
+.customers__title {
+ @include font(700, 28px, 1.18);       
+}
+
+.customers__text { 
+@include font(400, 14px, 1.14);    
+}
