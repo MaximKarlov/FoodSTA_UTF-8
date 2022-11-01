@@ -25,9 +25,13 @@ gap: 32px;
     }
 
         &__item {
-            display: flex;
+display: flex;
 justify-content: center;
 align-items: center;
+
+@include tab-max {
+        margin-bottom: 20px;
+}
 
         @include wh(280, 282);
         border: 16px solid #FFE550;
@@ -42,6 +46,12 @@ align-items: center;
         }
     }
 
+    &__item:nth-child(n+4) {
+        @include tab-max {
+        display: none;
+    }
+    }
+
     &__img {
         border-radius: 50%;
     }
@@ -51,3 +61,7 @@ align-items: center;
         cursor: pointer;
     }
 }
+
+// .favorites-list__link:nth-child(n+4) {
+//     display: none;
+// }
