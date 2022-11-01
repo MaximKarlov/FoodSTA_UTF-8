@@ -21,14 +21,17 @@
 
 .customers__item {
   width: 280px;
-  height: 247px;
+  height: 100%;
   padding: 8px;
-  margin-bottom: 24px;
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
 
   background-color: var(--primary);
+}
+
+.customers__item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .customers__icons {
@@ -51,12 +54,13 @@
 
 .avatar__photo {
   width: 48px;
-  margin-right: 16px;
+  margin: 2px 16px 2px 0;
 }
 
 .avatar__card {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding-right: 16px;
   border-right: 0.85px solid var(--btn-menu);
 }
