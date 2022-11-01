@@ -1,7 +1,68 @@
-.customers__title {
- @include font(700, 28px, 1.18);       
+.customers {
+  background-image: url(../img/background/customers/customers320mob@1x.jpg);
+  @include retina {
+    background-image: url(../img/background/customers/customers320mob@2x.jpg);
+  }
+  background-repeat: no-repeat;
 }
 
-.customers__text { 
-@include font(400, 14px, 1.14);    
+.customers__title {
+  @include font(700, 28px, 1.18);
+  margin-bottom: 20px;
+}
+
+.customers__text {
+  @include font(400, 14px, 1.14);
+  margin-bottom: 32px;
+}
+
+// .customers__list {
+// }
+
+.customers__item {
+  width: 280px;
+  height: 247px;
+  padding: 8px;
+  margin-bottom: 24px;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+
+  background-color: var(--primary);
+}
+
+.customers__icons {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.customers__icon:not(:last-child) {
+  margin-right: 4px;
+}
+
+.customers__comment {
+  @include font(700, 16px, 1.19);
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: flex;
+}
+
+.avatar__photo {
+  width: 48px;
+  margin-right: 16px;
+}
+
+.avatar__card {
+  display: flex;
+  flex-direction: column;
+  padding-right: 16px;
+  border-right: 0.85px solid var(--btn-menu);
+}
+.avatar__name {
+  @include font(500, 14px, 1.5);
+}
+.avatar__status {
+  @include font(400, 14px, 1.5);
 }
