@@ -8,6 +8,13 @@
   font-size: $s;
   line-height: $h;
 }
+
+@mixin font2($w, $s, $h) {
+  font-weight: $w;
+  font-size: $s + px;
+  line-height: $h;
+}
+
 @mixin wh($w, $h) {
   width: $w;
   height: $h;

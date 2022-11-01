@@ -1,4 +1,14 @@
 // Тут прописуєм зміні кольорів
+
+//Modal variables
+$all-hovfoc-function: cubic-bezier(0.4, 0, 0.2, 1);
+$modal-background: #ffe550;
+$modal-text-color: #2c2c2c;
+$modal-placeholder-color: #c4c4c4;
+$modal-btn-color: #ffffff;
+$modal-rghtbtn-color: #bbf330;
+$modal-btn-border: #7eb101;
+$modal-errbtn-border: #ff705d;
 :root {
   --primary: rgba(255, 255, 255, 1);
   --second: rgba(0, 0, 0, 1);

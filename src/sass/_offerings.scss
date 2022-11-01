@@ -1,3 +1,4 @@
+
 .offerings {
   // 320px mobile responsive
 
@@ -7,7 +8,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-color: var(--primary);
+
+//     background-color: var(--primary);
+
 
     @include retina {
       background-image: url(../img/offerings/off-ground-min-2x.png);
@@ -71,32 +74,6 @@
       margin-bottom: 28px;
     }
 
-    &__wrapper {
-      display: flex;
-
-      align-items: baseline;
-    }
-
-    &__button {
-      @include wh(106px, 40px);
-
-      margin-right: 24px;
-
-      background: #ffffff;
-
-      border: 2px solid #7eb101;
-      border-radius: 30px;
-    }
-
-    &__link {
-      @include font(400px, 13.7px, 1.5);
-
-      color: #000000;
-
-      text-decoration: none;
-    }
-  }
-
   // 480px mobile adaptive
 
   @include mob-min {
@@ -115,19 +92,8 @@
     &__img {
       display: block;
 
-      max-width: 280px;
-
-      margin-top: 40px;
-      margin-right: auto;
-      margin-bottom: 60px;
-      margin-left: auto;
-    }
-
     &__title {
       @include font(700px, 28px, 1.17);
-
-      margin-bottom: 28px;
-    }
 
     &__advertising {
       @include font(400px, 14px, 1.17);
