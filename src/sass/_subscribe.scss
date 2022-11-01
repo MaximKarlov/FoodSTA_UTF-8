@@ -56,7 +56,7 @@
     padding-bottom: 40px;
     }
 
-    @media screen and (min-width: 769px) and (max-width: 1600px) {
+    @include tab-min {
     font-size: 16px;
     line-height: 150%;
     padding-bottom: 24px
@@ -65,14 +65,13 @@
 }
 
 .subscribe__place {
-    @include mob-max {
+    @include gum {
     display: block;
-    padding-bottom: 60px;
     }
     
-    @media screen and (min-width: 541px) and (max-width: 1600px) {
-    display: flex;
-    width: 100%;
+    @include tab-min {
+        display: flex;
+        width: 100%;
     }
 }
 
@@ -80,8 +79,12 @@
     @include gum {
         display: block;
     }
+
+    @include mob-min {
+        display: flex;
+    }
         
-    @media screen and (min-width: 541px) and (max-width: 1600px) {
+    @include tab-min {
         display: flex;
     }
 }
@@ -93,11 +96,16 @@
     padding: 12px 57px 12px 12px;
     width: 100%;
 
-    @media screen and (max-width: 540px) {
+    @include gum {
         margin-bottom: 20px;
     }
+
+    @include mob-min {
+        margin-right: 22px;
+        width: 395px;
+    }
         
-    @media screen and (min-width: 541px) and (max-width: 1600px) {
+    @include tab-min {
         margin-right: 32px;
         width: 395px;
     }
@@ -110,7 +118,7 @@
     background: #BBF330;;
     border: none;
 
-    @include mob-max {
+    @include gum {
         display: flex;
         margin-left: auto;
     }
@@ -122,15 +130,20 @@
 
 .subscribe__image {
     display: flex;
+    @include mob-max {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .subscribe__banan {
 
     @include mob-max {
         margin: 0;
-        }
+        width: 281px;
+    }
         
-        @media screen and (min-width: 768px) and (max-width: 1600px) {
-            margin: -46px 0;
-        }
+    @media screen and (min-width: 768px) and (max-width: 1600px) {
+        margin: -46px 0;
+    }
 }
