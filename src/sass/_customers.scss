@@ -27,7 +27,7 @@
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
 
-  background-color: var(--primary);
+  background-color: #FFFFFF;
 }
 
 .customers__item:not(:last-child) {
@@ -62,7 +62,7 @@
   flex-direction: column;
   justify-content: space-around;
   padding-right: 16px;
-  border-right: 0.85px solid var(--btn-menu);
+  border-right: 0.85px solid rgba(126, 177, 1, 1);
 }
 .avatar__name {
   @include font(500, 14, 1.5);
