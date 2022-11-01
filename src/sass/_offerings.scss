@@ -1,6 +1,8 @@
 .offerings {
   // 320px mobile responsive
 
+  padding-top: 40px;
+
   @include gum {
     @include wh(100%, 1050px);
     background-image: url(../img/offerings/off-ground-min.png);
@@ -18,10 +20,13 @@
 
       max-width: 280px;
 
-      margin-top: 40px;
       margin-right: auto;
       margin-bottom: 60px;
       margin-left: auto;
+    }
+
+    &__content {
+      padding-left: 20px;
     }
 
     &__title {
@@ -100,7 +105,10 @@
   // 480px mobile adaptive
 
   @include mob-min {
+    padding-top: 40px;
+
     width: 480px;
+
     @include wh(480px, 1050px);
     background-image: url(../img/offerings/off-ground-mob.png);
     background-repeat: no-repeat;
@@ -117,10 +125,13 @@
 
       max-width: 280px;
 
-      margin-top: 40px;
       margin-right: auto;
       margin-bottom: 60px;
       margin-left: auto;
+    }
+
+    &__content {
+      padding-left: 20px;
     }
 
     &__title {
@@ -206,6 +217,9 @@
   // 768px tablet adaptive
 
   @include tab-min {
+    margin-top: -108px;
+    padding-top: 150px;
+
     width: 768px;
 
     @include wh(768px, 1140px);
@@ -219,7 +233,10 @@
 
     &__img {
       max-width: 704px;
-      margin-top: 150px;
+    }
+
+    &__content {
+      padding-left: 32px;
     }
 
     &__title {
@@ -249,6 +266,11 @@
     display: flex;
     align-items: center;
 
+    padding-top: 177px;
+    margin-bottom: -161px;
+
+    width: 100%;
+
     @include wh(1280px, 824px);
     background-image: url(../img/offerings/off-ground-desk.png);
     background-repeat: no-repeat;
@@ -262,10 +284,13 @@
       max-width: 550px;
       min-height: 550px;
 
-      margin-top: 231px;
       margin-right: 90px;
       margin-bottom: 43px;
       margin-left: 16px;
+    }
+
+    &__content {
+      padding-left: 0;
     }
 
     &__link {
