@@ -1,37 +1,84 @@
+.section.customers {
+   @include tab-min {
+    padding-top: 60px;
+    padding-bottom: 120px;
+   }
+}
+
 .customers {
+  max-width: 320px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(../img/background/customers/customers320mob@1x.jpg);
   @include retina {
     background-image: url(../img/background/customers/customers320mob@2x.jpg);
   }
-  background-repeat: no-repeat;
+
+  @media screen and (min-width: 320px) and (max-width: 767.5px) {
+    width: 480px;
+    background-image: url(../img/background/customers/customers480mob@1x.jpg);
+    @include retina {
+      background-image: url(../img/background/customers/customers480mob@2x.jpg);
+    }
+  }
+  @include tab-min {
+    max-width: 768px;
+    background-image: url(../img/background/customers/customers768tab@1x.jpg);
+    @include retina {
+      background-image: url(../img/background/customers/customers768tab@2x.jpg);
+    }
+  }
 }
 
 .customers__title {
-  @include font(700, 28px, 1.18);
+  @include font(700, 28, 1.18);
   margin-bottom: 20px;
+
+  @include tab-min {
+    @include font(700, 42, 1.17);
+  }
 }
 
 .customers__text {
-  @include font(400, 14px, 1.14);
+  @include font(400, 14, 1.14);
   margin-bottom: 32px;
+
+  @include tab-min {
+    @include font(400, 16, 1.19);
+  }
 }
 
-// .customers__list {
-// }
+.customers__list {
+  @include tab-min {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 
 .customers__item {
-  width: 280px;
+  max-width: 280px;
   height: 100%;
   padding: 8px;
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
 
-  background-color: var(--primary);
+  background-color: #ffffff;
+
+  @include tab-min {
+    max-width: 336px;
+    padding: 12px;
+  }
 }
 
 .customers__item:not(:last-child) {
   margin-bottom: 24px;
+
+  @include tab-min {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
 }
 
 .customers__icons {
@@ -44,8 +91,12 @@
 }
 
 .customers__comment {
-  @include font(700, 16px, 1.19);
+  @include font(700, 16, 1.19);
   margin-bottom: 40px;
+
+   @include tab-min {
+   @include font(700, 18, 1.17);
+  }
 }
 
 .avatar {
@@ -62,11 +113,11 @@
   flex-direction: column;
   justify-content: space-around;
   padding-right: 16px;
-  border-right: 0.85px solid var(--btn-menu);
+  border-right: 0.85px solid rgba(126, 177, 1, 1);
 }
 .avatar__name {
-  @include font(500, 14px, 1.5);
+  @include font(500, 14, 1.5);
 }
 .avatar__status {
-  @include font(400, 14px, 1.5);
+  @include font(400, 14, 1.5);
 }
