@@ -1,8 +1,12 @@
 .section.customers {
-   @include tab-min {
+  @include tab-min {
     padding-top: 60px;
     padding-bottom: 120px;
-   }
+  }
+  @include desk-min {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
 }
 
 .customers {
@@ -16,7 +20,7 @@
   }
 
   @media screen and (min-width: 320px) and (max-width: 767.5px) {
-    width: 480px;
+    max-width: 480px;
     background-image: url(../img/background/customers/customers480mob@1x.jpg);
     @include retina {
       background-image: url(../img/background/customers/customers480mob@2x.jpg);
@@ -29,24 +33,34 @@
       background-image: url(../img/background/customers/customers768tab@2x.jpg);
     }
   }
+
+  @include desk-min {
+    max-width: 1280px;
+    background-image: url(../img/background/customers/customers1280desk@1x.jpg);
+    @include retina {
+      background-image: url(../img/background/customers/customers1280desk@2x.jpg);
+    }
+  }
 }
 
 .customers__title {
-  @include font(700, 28, 1.18);
+  @include font(700, 28px, 1.18);
   margin-bottom: 20px;
 
   @include tab-min {
-    @include font(700, 42, 1.17);
+    @include font(700, 42px, 1.17);
   }
+
 }
 
 .customers__text {
-  @include font(400, 14, 1.14);
+  @include font(400, 14px, 1.14);
   margin-bottom: 32px;
 
   @include tab-min {
-    @include font(400, 16, 1.19);
+    @include font(400, 16px, 1.19);
   }
+
 }
 
 .customers__list {
@@ -54,6 +68,10 @@
     display: flex;
     justify-content: space-evenly;
   }
+  
+   @include desk-min {
+  justify-content: flex-start;
+ }
 }
 
 .customers__item {
@@ -70,6 +88,12 @@
     max-width: 336px;
     padding: 12px;
   }
+
+   @include desk-min {
+  max-width: 501px;
+   padding: 14px;
+ }
+
 }
 
 .customers__item:not(:last-child) {
@@ -79,6 +103,10 @@
     margin-bottom: 0;
     margin-right: 32px;
   }
+
+   @include desk-min {
+  margin-right: 139px;
+ }
 }
 
 .customers__icons {
@@ -91,11 +119,11 @@
 }
 
 .customers__comment {
-  @include font(700, 16, 1.19);
+  @include font(700, 16px, 1.19);
   margin-bottom: 40px;
 
-   @include tab-min {
-   @include font(700, 18, 1.17);
+  @include tab-min {
+    @include font(700, 18px, 1.17);
   }
 }
 
@@ -116,8 +144,8 @@
   border-right: 0.85px solid rgba(126, 177, 1, 1);
 }
 .avatar__name {
-  @include font(500, 14, 1.5);
+  @include font(500, 14px, 1.5);
 }
 .avatar__status {
-  @include font(400, 14, 1.5);
+  @include font(400, 14px, 1.5);
 }
