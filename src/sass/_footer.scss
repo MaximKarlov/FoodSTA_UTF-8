@@ -6,7 +6,7 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom, left, right;
   background-position-y: bottom, 150px, top;
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767.5px) {
     max-width: 480px;
   }
   @media screen and(min-width:768px) {
@@ -25,12 +25,15 @@
 .navi {
   display: flex;
   justify-content: space-between;
+  @media screen and(min-width:1280px) {
+    justify-content: left;
+  }
 }
 
-.logo__link--footer {
+.logo-link--footer {
   display: block;
 }
-.logo__svg {
+.logo-link__svg {
   width: 69px;
 }
 .footer-nav {
@@ -47,6 +50,8 @@
     margin-right: 150px;
   }
   @media screen and(min-width:1280px) {
+    margin-left: 148px;
+    margin-right: 0;
   }
 }
 .footer-nav__item {
@@ -64,6 +69,11 @@
   @include font(400, 14, 1.17);
   color: #000000;
 }
+.subscribe {
+  @media screen and(min-width:1280px) {
+    margin-left: 190px;
+  }
+}
 .footer-subs {
   margin-top: 40px;
   display: flex;
@@ -71,6 +81,9 @@
   @media screen and(min-width:768px) {
     flex-direction: row;
     align-items: center;
+  }
+  @media screen and(min-width:1280px) {
+    margin-top: 0;
   }
 }
 .footer-subs__label {
@@ -122,28 +135,28 @@
     margin-left: 15px;
   }
 }
-.footer-subs__agreement {
-  display: flex;
-  justify-content: center;
-  padding-top: 82px;
-  @media screen and(min-width:768px) {
-    padding-top: 12px;
-    justify-content: flex-start;
-  }
-}
+
 .agreement {
-  display: inline;
+  display: inline-block;
+  justify-self: center;
   margin-right: 4px;
   text-align: center;
+  margin-top: 82px;
+
+  @media screen and(min-width:768px) {
+    margin-top: 12px;
+  }
 }
 
-.privacy-policy__link {
-}
 .footer-link {
   display: flex;
   flex-direction: column;
+  text-align: center;
   @media screen and(min-width:768px) {
     flex-direction: row;
+  }
+  @media screen and(min-width:768px) {
+    justify-content: space-between;
   }
 }
 .footer-link__list {
@@ -153,9 +166,15 @@
   padding-top: 60px;
   @media screen and(min-width:768px) {
     justify-content: left;
-    &:not(:first-child) {
+    &:not(:first-of-type) {
       padding-left: 20px;
     }
+  }
+}
+
+.footer-link__item:not(:first-child) {
+  @media screen and(min-width:768px) {
+    padding-left: 20px;
   }
 }
 .reserved {
@@ -164,5 +183,10 @@
   padding-top: 40px;
   @media screen and(min-width:768px) {
     padding-top: 60px;
+  }
+}
+.desktop {
+  @media screen and(min-width:1280px) {
+    display: flex;
   }
 }
