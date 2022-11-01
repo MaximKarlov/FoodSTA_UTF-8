@@ -318,3 +318,17 @@
     }
   }
 }
+
+.section--padding-top-50 {
+  @include gum {
+    padding-top: 50px;
+  }
+
+  @include mob-min {
+    padding-top: 50px;
+  }
+
+  @include tab-min {
+    padding-top: 0;
+  }
+}
