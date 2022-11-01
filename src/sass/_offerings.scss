@@ -1,270 +1,270 @@
-.container {
-  @include gum {
-    @include wh(100%, 1050px);
-    background-image: url(../img/offerings/off-ground-min.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+// .container {
+//   @include gum {
+//     @include wh(100%, 1050px);
+//     background-image: url(../img/offerings/off-ground-min.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
 
-    background-color: var(--primary);
+//     background-color: var(--primary);
 
-    @include retina {
-      background-image: url(../img/offerings/off-ground-min-2x.jpg);
-    }
+//     @include retina {
+//       background-image: url(../img/offerings/off-ground-min-2x.jpg);
+//     }
 
-    &__wrapper {
-      display: flex;
+//     &__wrapper {
+//       display: flex;
 
-      align-items: baseline;
-    }
+//       align-items: baseline;
+//     }
 
-    &__button {
-      @include wh(106px, 40px);
+//     &__button {
+//       @include wh(106px, 40px);
 
-      margin-right: 24px;
+//       margin-right: 24px;
 
-      background: #ffffff;
+//       background: #ffffff;
 
-      border: 2px solid #7eb101;
-      border-radius: 30px;
-    }
+//       border: 2px solid #7eb101;
+//       border-radius: 30px;
+//     }
 
-    &__link {
-      @include font(400px, 13.7px, 1.5);
+//     &__link {
+//       @include font(400px, 13.7px, 1.5);
 
-      color: #000000;
+//       color: #000000;
 
-      text-decoration: none;
-    }
-  }
+//       text-decoration: none;
+//     }
+//   }
 
-  @include mob-min {
-    width: 480px;
-    @include wh(480px, 1050px);
-    background-image: url(../img/offerings/off-ground-mob.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+//   @include mob-min {
+//     width: 480px;
+//     @include wh(480px, 1050px);
+//     background-image: url(../img/offerings/off-ground-mob.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
 
-    background-color: var(--primary);
+//     background-color: var(--primary);
 
-    @include retina {
-      background-image: url(../img/offerings/off-ground-mob-2x.jpg);
-    }
+//     @include retina {
+//       background-image: url(../img/offerings/off-ground-mob-2x.jpg);
+//     }
 
-    &__wrapper {
-      display: flex;
+//     &__wrapper {
+//       display: flex;
 
-      align-items: baseline;
-    }
+//       align-items: baseline;
+//     }
 
-    &__button {
-      @include wh(106px, 40px);
+//     &__button {
+//       @include wh(106px, 40px);
 
-      margin-right: 24px;
+//       margin-right: 24px;
 
-      background: #ffffff;
+//       background: #ffffff;
 
-      border: 2px solid #7eb101;
-      border-radius: 30px;
-    }
+//       border: 2px solid #7eb101;
+//       border-radius: 30px;
+//     }
 
-    &__link {
-      @include font(400px, 13.7px, 1.5);
+//     &__link {
+//       @include font(400px, 13.7px, 1.5);
 
-      color: #000000;
+//       color: #000000;
 
-      text-decoration: none;
-    }
-  }
+//       text-decoration: none;
+//     }
+//   }
 
-  @include tab-min {
-    width: 768px;
+//   @include tab-min {
+//     width: 768px;
 
-    @include wh(768px, 1140px);
-    background-image: url(../img/offerings/off-ground-tab.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+//     @include wh(768px, 1140px);
+//     background-image: url(../img/offerings/off-ground-tab.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
 
-    @include retina {
-      background-image: url(../img/offerings/off-ground-tab-2x.jpg);
-    }
-  }
+//     @include retina {
+//       background-image: url(../img/offerings/off-ground-tab-2x.jpg);
+//     }
+//   }
 
-  @include desk-min {
-    display: flex;
-    align-items: baseline;
+//   @include desk-min {
+//     display: flex;
+//     align-items: baseline;
 
-    @include wh(1280px, 824px);
-    background-image: url(../img/offerings/off-ground-desk.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+//     @include wh(1280px, 824px);
+//     background-image: url(../img/offerings/off-ground-desk.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
 
-    @include retina {
-      background-image: url(../img/offerings/off-ground-desk-2x.jpg);
-    }
-
-    &__link {
-      display: none;
-    }
-  }
-}
-
-.section {
-  @include gum {
-    margin-top: 50px;
-    margin-bottom: 60px;
-
-    &__img {
-      display: block;
-
-      max-width: 280px;
-
-      margin-top: 40px;
-      margin-right: auto;
-      margin-bottom: 60px;
-      margin-left: auto;
-    }
-
-    &__title {
-      @include font(700px, 28px, 1.18);
-
-      margin-bottom: 28px;
-    }
-
-    &__text {
-      @include font(400px, 14px, 1.14);
-
-      margin-bottom: 28px;
-    }
-  }
-
-  @include mob-min {
-    margin-top: 50px;
-    margin-bottom: 60px;
-
-    &__img {
-      display: block;
-
-      max-width: 280px;
-
-      margin-top: 40px;
-      margin-right: auto;
-      margin-bottom: 60px;
-      margin-left: auto;
-    }
-
-    &__title {
-      @include font(700px, 28px, 1.18);
-
-      margin-bottom: 28px;
-    }
-
-    &__text {
-      @include font(400px, 14px, 1.14);
-
-      margin-bottom: 28px;
-    }
-  }
-
-  @include tab-min {
-    &__title {
-      @include font(700px, 42px, 1.17);
-      max-width: 526px;
-      margin-bottom: 20px;
-    }
-
-    &__text {
-      @include font(400px, 16px, 1.17);
-      max-width: 500px;
-      margin-bottom: 40px;
-    }
-
-    &__img {
-      max-width: 704px;
-      margin-top: 150px;
-    }
-  }
-
-  @include desk-min {
-    &__title {
-      @include font(700px, 42px, 1.2);
-      max-width: 526px;
-      margin-bottom: 20px;
-    }
-
-    &__text {
-      @include font(400px, 16px, 1.5);
-      max-width: 500px;
-      margin-bottom: 40px;
-    }
-  }
-}
-
-.offerings {
-  @include gum {
-    &__item {
-      max-width: 252px;
-      margin-bottom: 28px;
-    }
-
-    &__title {
-      margin-bottom: 16px;
-    }
-
-    &__icon {
-      fill: #7eb101;
-      margin-bottom: 8px;
-    }
-
-    &__wrapper {
-      @include wh(48px, 48px);
-      display: flex;
-      border-radius: 50%;
-
-      justify-content: center;
-      align-items: center;
-
-      background-color: #fff;
-      background-repeat: no-repeat;
-
-      margin-bottom: 8px;
-    }
-  }
-
-  @include mob-min {
-    &__item {
-      max-width: 252px;
-      margin-bottom: 28px;
-    }
-
-    &__title {
-      margin-bottom: 16px;
-    }
-
-    &__icon {
-      fill: #7eb101;
-      margin-bottom: 8px;
-    }
-
-    &__wrapper {
-      @include wh(48px, 48px);
-      display: flex;
-      border-radius: 50%;
-
-      justify-content: center;
-      align-items: center;
-
-      background-color: #fff;
-      background-repeat: no-repeat;
-
-      margin-bottom: 8px;
-    }
-  }
-
-  @include tab-min {
-    display: flex;
-
-    &__item:not(:last-child) {
-      margin-right: 116px;
-    }
-  }
-}
+//     @include retina {
+//       background-image: url(../img/offerings/off-ground-desk-2x.jpg);
+//     }
+
+//     &__link {
+//       display: none;
+//     }
+//   }
+// }
+
+// .section {
+//   @include gum {
+//     margin-top: 50px;
+//     margin-bottom: 60px;
+
+//     &__img {
+//       display: block;
+
+//       max-width: 280px;
+
+//       margin-top: 40px;
+//       margin-right: auto;
+//       margin-bottom: 60px;
+//       margin-left: auto;
+//     }
+
+//     &__title {
+//       @include font(700px, 28px, 1.18);
+
+//       margin-bottom: 28px;
+//     }
+
+//     &__text {
+//       @include font(400px, 14px, 1.14);
+
+//       margin-bottom: 28px;
+//     }
+//   }
+
+//   @include mob-min {
+//     margin-top: 50px;
+//     margin-bottom: 60px;
+
+//     &__img {
+//       display: block;
+
+//       max-width: 280px;
+
+//       margin-top: 40px;
+//       margin-right: auto;
+//       margin-bottom: 60px;
+//       margin-left: auto;
+//     }
+
+//     &__title {
+//       @include font(700px, 28px, 1.18);
+
+//       margin-bottom: 28px;
+//     }
+
+//     &__text {
+//       @include font(400px, 14px, 1.14);
+
+//       margin-bottom: 28px;
+//     }
+//   }
+
+//   @include tab-min {
+//     &__title {
+//       @include font(700px, 42px, 1.17);
+//       max-width: 526px;
+//       margin-bottom: 20px;
+//     }
+
+//     &__text {
+//       @include font(400px, 16px, 1.17);
+//       max-width: 500px;
+//       margin-bottom: 40px;
+//     }
+
+//     &__img {
+//       max-width: 704px;
+//       margin-top: 150px;
+//     }
+//   }
+
+//   @include desk-min {
+//     &__title {
+//       @include font(700px, 42px, 1.2);
+//       max-width: 526px;
+//       margin-bottom: 20px;
+//     }
+
+//     &__text {
+//       @include font(400px, 16px, 1.5);
+//       max-width: 500px;
+//       margin-bottom: 40px;
+//     }
+//   }
+// }
+
+// .offerings {
+//   @include gum {
+//     &__item {
+//       max-width: 252px;
+//       margin-bottom: 28px;
+//     }
+
+//     &__title {
+//       margin-bottom: 16px;
+//     }
+
+//     &__icon {
+//       fill: #7eb101;
+//       margin-bottom: 8px;
+//     }
+
+//     &__wrapper {
+//       @include wh(48px, 48px);
+//       display: flex;
+//       border-radius: 50%;
+
+//       justify-content: center;
+//       align-items: center;
+
+//       background-color: #fff;
+//       background-repeat: no-repeat;
+
+//       margin-bottom: 8px;
+//     }
+//   }
+
+//   @include mob-min {
+//     &__item {
+//       max-width: 252px;
+//       margin-bottom: 28px;
+//     }
+
+//     &__title {
+//       margin-bottom: 16px;
+//     }
+
+//     &__icon {
+//       fill: #7eb101;
+//       margin-bottom: 8px;
+//     }
+
+//     &__wrapper {
+//       @include wh(48px, 48px);
+//       display: flex;
+//       border-radius: 50%;
+
+//       justify-content: center;
+//       align-items: center;
+
+//       background-color: #fff;
+//       background-repeat: no-repeat;
+
+//       margin-bottom: 8px;
+//     }
+//   }
+
+//   @include tab-min {
+//     display: flex;
+
+//     &__item:not(:last-child) {
+//       margin-right: 116px;
+//     }
+//   }
+// }
