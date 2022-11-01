@@ -66,8 +66,9 @@
 }
 .footer-subs {
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
   @media screen and(min-width:768px) {
-    display: flex;
     flex-direction: row;
     align-items: center;
   }
@@ -91,6 +92,7 @@
   &:hover,
   &:focus,
   &:active {
+    outline: none;
     border-color: #7eb101;
   }
   @media screen and(min-width:768px) {
@@ -99,12 +101,22 @@
 }
 .footer-subs__btn {
   display: block;
+  align-self: flex-end;
   width: 100px;
   height: 42px;
   border: solid 2px #ffe550;
   border-radius: 30px;
+  background-color: #ffffff;
   float: right;
+  color: #2c2c2c;
   margin-top: 20px;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: #7eb101;
+  }
+
   @media screen and(min-width:768px) {
     margin-top: 27px;
     margin-left: 15px;
@@ -119,8 +131,20 @@
     justify-content: flex-start;
   }
 }
+.agreement {
+  display: inline;
+  margin-right: 4px;
+  text-align: center;
+}
+
 .privacy-policy__link {
-  margin-left: 4px;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  @media screen and(min-width:768px) {
+    flex-direction: row;
+  }
 }
 .footer-link__list {
   display: flex;
@@ -129,14 +153,16 @@
   padding-top: 60px;
   @media screen and(min-width:768px) {
     justify-content: left;
-    &:not(:last-of-type) {
-      margin-right: 20px;
+    &:not(:first-child) {
+      padding-left: 20px;
     }
   }
 }
 .reserved {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  display: block;
+  text-align: center;
   padding-top: 40px;
+  @media screen and(min-width:768px) {
+    padding-top: 60px;
+  }
 }
