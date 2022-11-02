@@ -1,0 +1,135 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.subscribe__header{
+    margin: 0 auto;
+    @include mob-max {
+        display: block;
+        width: 100%;
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1600px) {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.subscribe__block {
+    display: block;
+}
+
+.subscribe__title {
+    font-weight: 700;
+
+    @include mob-max {
+    font-size: 28px;
+    line-height: 120%;
+}
+
+    @media screen and (min-width: 769px) and (max-width: 1600px) {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 120%;
+}
+}
+
+.subscribe__description {
+    display: flex;
+
+    @include mob-max {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    }
+
+    @include tab-min {
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 24px
+}
+
+}
+
+.subscribe__place {
+    @include gum {
+    display: block;
+    }
+    
+    @include tab-min {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.subscribe__form {
+    @include gum {
+        display: block;
+    }
+
+    @include mob-min {
+        display: flex;
+    }
+        
+    @include tab-min {
+        display: flex;
+    }
+}
+
+.subscribe__input {
+    border: 1px solid yellow;
+    padding: 16px;
+    border-radius: 30px;
+    padding: 12px 57px 12px 12px;
+    width: 100%;
+
+    @include gum {
+        margin-bottom: 20px;
+    }
+
+    @include mob-min {
+        margin-right: 22px;
+        width: 395px;
+    }
+        
+    @include tab-min {
+        margin-right: 32px;
+        width: 395px;
+    }
+}
+
+.subscribe__button {
+    border-radius: 30px;
+    padding: 11px 22px;
+    cursor: pointer;
+    background: #BBF330;;
+    border: none;
+
+    @include gum {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+.subscribe__image {
+    display: flex;
+    @include mob-max {
+        padding-bottom: 20px;
+        flex-direction: row-reverse;
+    }
+}
+
+.subscribe__banan {
+
+    @include mob-max {
+        margin: 0;
+        width: 281px;
+    }
+        
+    @media screen and (min-width: 768px) and (max-width: 1600px) {
+        margin: -46px 0;
+    }
+}
