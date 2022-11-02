@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(94, 99, 99, 0.7);
 
   opacity: 1;
   transition-property: opacity;
@@ -142,4 +142,16 @@
   @include font(500, 13, 1.4);
   color: $modal-errbtn-border;
   margin-left: 12px;
+}
+
+@include mob-max {
+  .backdrop__modal {
+    max-width: 320px;
+  }
+}
+
+@include tab-min {
+  .backdrop__modal {
+    min-width: 458px;
+  }
 }
