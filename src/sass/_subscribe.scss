@@ -18,7 +18,7 @@
     
     @include tab-min {
         max-width: 768px;;
-        display: flex;
+        display: block;
     }
 
     @include desk-min {
@@ -133,11 +133,27 @@
 
 .sub-section__image {
     display: flex;
+
+    @include gum {
+        width: auto;
+    }
+
     @include mob-max {
         padding-bottom: 20px;
         display: flex;
         justify-content: center;
+        margin-left: auto;
     }
+
+    @include tab-min {
+        @include tab-max {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        width: 281px;
+    }
+    }   
 }
 
 .sub-section__banan {
@@ -147,7 +163,7 @@
         width: 281px;
     }
         
-    @media screen and (min-width: 768px) and (max-width: 1600px) {
-        margin: -46px 0;
+    @include tab-min {
+        margin-top: -46px;
     }
 }
