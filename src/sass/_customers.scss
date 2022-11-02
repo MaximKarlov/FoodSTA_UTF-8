@@ -77,9 +77,7 @@
   max-width: 280px;
   height: 100%;
   padding: 8px;
-  border-top-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-radius: 0 10% 10% 10%;
 
   background-color: #ffffff;
 
@@ -91,9 +89,7 @@
   @include desk-min {
     max-width: 501px;
     padding: 14px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 0 30px 30px 30px;
   }
 }
 
