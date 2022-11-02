@@ -25,9 +25,8 @@ gap: 32px;
     }
 
         &__item {
-display: flex;
-justify-content: center;
-align-items: center;
+            @include flex (center, center);
+
 
 @include tab-max {
         margin-bottom: 20px;
@@ -39,7 +38,7 @@ align-items: center;
 
         @include tab-min {
             @include wh(336, 338);
-        }
+                    }
 
         @include desk-min {
             @include wh(395, 397);
@@ -47,7 +46,7 @@ align-items: center;
     }
 
     &__item:nth-child(n+4) {
-        @include tab-max {
+        @include mob-max {
         display: none;
     }
     }
