@@ -8,7 +8,7 @@
     @include mob-max {
         display: block;
         max-width: 480px;
-        margin: -90px auto;
+        margin-top: -90px;
     }
     
     @include tab-min {
