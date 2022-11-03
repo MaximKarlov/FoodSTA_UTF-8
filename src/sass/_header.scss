@@ -35,6 +35,12 @@
   font-size: 14px;
   line-height: 1.1;
   color: #000000;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    font-weight: 500;
+    color: #bbf330;
+  }
 }
 
 // .menu__link--current {
