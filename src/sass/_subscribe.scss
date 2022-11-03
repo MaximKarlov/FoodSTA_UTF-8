@@ -8,7 +8,7 @@
     @include mob-max {
         display: block;
         max-width: 480px;
-        margin-top: -90px;
+        margin-top: -70px;
     }
     
     @include tab-min {
@@ -138,12 +138,14 @@
     @include mob-max {
         padding-bottom: 20px;
         justify-content: center;
+        display: flex;
     }
 
     @include tab-min {
         @include tab-max {
         padding-bottom: 20px;
         justify-content: center;
+        display: flex;
         margin-left: auto;
         width: 281px;
     }
@@ -158,6 +160,6 @@
     }
         
     @include tab-min {
-        margin-top: -46px;
+        margin-top: -70px
     }
 }
