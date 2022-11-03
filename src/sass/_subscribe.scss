@@ -3,27 +3,24 @@
 }
 
 .sub-section__header{
-    margin: 0 auto;
     flex-direction: row-reverse;
 
-    @include gum {
+    @include mob-max {
         display: block;
         max-width: 480px;
-    }
-
-    @include mob-min {
-        display: block;
-        max-width: 480px;
+        margin-top: -90px;
     }
     
     @include tab-min {
         max-width: 768px;;
         display: block;
+        margin: 0 auto;
     }
 
     @include desk-min {
         max-width: 1200px;;
         display: flex;
+        margin: 0 auto;
     }
 }
 
