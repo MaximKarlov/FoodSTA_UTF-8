@@ -95,6 +95,7 @@
 
       border: 2px solid #7eb101;
       border-radius: 30px;
+      cursor: pointer;
     }
 
     &__button:hover,
@@ -208,6 +209,7 @@
 
       border: 2px solid #7eb101;
       border-radius: 30px;
+      cursor: pointer;
     }
 
     &__button:hover,
@@ -287,8 +289,6 @@
     padding-top: 177px;
     margin-bottom: -161px;
 
-    width: 100%;
-
     @include wh(1280px, 824px);
     background-image: url(../img/offerings/off-ground-desk.png);
     background-repeat: no-repeat;
@@ -318,5 +318,19 @@
     &__link {
       display: none;
     }
+  }
+}
+
+.section--padding-top-50 {
+  @include gum {
+    padding-top: 50px;
+  }
+
+  @include mob-min {
+    padding-top: 50px;
+  }
+
+  @include tab-min {
+    padding-top: 0;
   }
 }
