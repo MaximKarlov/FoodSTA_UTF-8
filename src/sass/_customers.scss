@@ -1,4 +1,5 @@
 .section.customers {
+  margin: 0 auto;
   @include tab-min {
     padding-top: 60px;
     padding-bottom: 120px;
@@ -21,6 +22,7 @@
 
   @media screen and (min-width: 320px) and (max-width: 767.5px) {
     max-width: 480px;
+    min-height: 769px;
     background-image: url(../img/background/customers/customers480mob@1x.jpg);
     @include retina {
       background-image: url(../img/background/customers/customers480mob@2x.jpg);
@@ -50,7 +52,6 @@
   @include tab-min {
     @include font(700, 42px, 1.17);
   }
-
 }
 
 .customers__text {
@@ -60,7 +61,6 @@
   @include tab-min {
     @include font(400, 16px, 1.19);
   }
-
 }
 
 .customers__list {
@@ -68,19 +68,17 @@
     display: flex;
     justify-content: space-evenly;
   }
-  
-   @include desk-min {
-  justify-content: flex-start;
- }
+
+  @include desk-min {
+    justify-content: flex-start;
+  }
 }
 
 .customers__item {
   max-width: 280px;
   height: 100%;
   padding: 8px;
-  border-top-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-radius: 0 10% 10% 10%;
 
   background-color: #ffffff;
 
@@ -89,11 +87,11 @@
     padding: 12px;
   }
 
-   @include desk-min {
-  max-width: 501px;
-   padding: 14px;
- }
-
+  @include desk-min {
+    max-width: 501px;
+    padding: 14px;
+    border-radius: 0 30px 30px 30px;
+  }
 }
 
 .customers__item:not(:last-child) {
@@ -104,14 +102,19 @@
     margin-right: 32px;
   }
 
-   @include desk-min {
-  margin-right: 139px;
- }
+  @include desk-min {
+    margin-right: 139px;
+  }
 }
 
 .customers__icons {
   display: flex;
   margin-bottom: 28px;
+}
+
+.customers__icon {
+  width: 17px;
+  height: 16px;
 }
 
 .customers__icon:not(:last-child) {

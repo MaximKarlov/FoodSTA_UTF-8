@@ -1,3 +1,5 @@
+// Header Styles
+
 .header {
   padding: 0;
   background-color: #fefefe;
@@ -14,11 +16,17 @@
   display: flex;
   align-items: baseline;
   gap: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    gap: 10px;
+  }
 }
 
 .menu__list {
   display: flex;
   gap: 28px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    gap: 20px;
+  }
 }
 
 .menu__link {
@@ -27,16 +35,22 @@
   font-size: 14px;
   line-height: 1.1;
   color: #000000;
-}
-
-.menu__link--current {
-  text-decoration: underline;
-  font-weight: 500;
-  color: #bbf330;
-  @media screen and (min-width: 1280px) {
-    font-weight: 700;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    font-weight: 500;
+    color: #bbf330;
   }
 }
+
+// .menu__link--current {
+//   text-decoration: underline;
+//   font-weight: 500;
+//   color: #bbf330;
+//   @media screen and (min-width: 1280px) {
+//     font-weight: 700;
+//   }
+// }
 
 .order-btn {
   padding: 6px 18px;
