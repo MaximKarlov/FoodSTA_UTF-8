@@ -1,0 +1,47 @@
+.to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: $modal-rghtbtn-color;
+  border-radius: 50%;
+  border: 2px solid $modal-btn-border;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  cursor: pointer;
+  z-index: 10;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $modal-btn-border;
+    border-top: none;
+    border-right: none;
+    transform: rotate(135deg);
+    position: relative;
+    top: 5px;
+
+    @include tab-min {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @include tab-min {
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+  }
+
+  @include desk-min {
+    width: 70px;
+    height: 70px;
+    bottom: 70px;
+    right: 70px;
+  }
+}
