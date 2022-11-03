@@ -43,7 +43,7 @@
     line-height: 120%;
 }
 
-    @media screen and (min-width: 769px) and (max-width: 1600px) {
+    @include tab-min {
     font-size: 42px;
     margin-bottom: 20px;
     line-height: 120%;
@@ -137,15 +137,12 @@
 
     @include mob-max {
         padding-bottom: 20px;
-        display: flex;
         justify-content: center;
-        margin-left: auto;
     }
 
     @include tab-min {
         @include tab-max {
         padding-bottom: 20px;
-        display: flex;
         justify-content: center;
         margin-left: auto;
         width: 281px;
