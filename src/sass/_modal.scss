@@ -1,4 +1,4 @@
-.backdrop1 {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,13 +12,13 @@
   // transition-timing-function: $all-hovfoc-function;
 }
 
-.backdrop--is-hidden1 {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.backdrop__modal1 {
+.backdrop__modal {
   transform: translate(-50%, -50%) scale(0.8);
 }
 
