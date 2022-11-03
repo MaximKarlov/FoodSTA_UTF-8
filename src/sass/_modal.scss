@@ -83,7 +83,9 @@
   border-radius: 30px;
   padding-left: 12px;
   @include font2(400, 16, 1.25);
+}
 
+.submit-form__field:not(:last-child) {
   margin-bottom: 24px;
 }
 
