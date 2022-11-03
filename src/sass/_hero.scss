@@ -1,16 +1,16 @@
 .hero__title {
   @include font(700, 28px, 1.2);
-  width: 280px;
+  max-width: 280px;
   padding-top: 60px;
   margin-bottom: 28px;
   @include tab-min {
     @include font(700, 42px, 1.2);
-    width: 537px;
+    max-width: 537px;
     margin-bottom: 44px;
   }
   @include desk-min {
     @include font(700, 48px, 1.2);
-    width: 502px;
+    max-width: 502px;
     padding-top: 159px;
     margin-bottom: 28px;
   }
@@ -18,16 +18,16 @@
 
 .hero__text {
   @include font(400, 14px, 1.5);
-  width: 266px;
+  max-width: 266px;
   margin-bottom: 28px;
 
   @include tab-min {
     @include font(400, 16px, 1.5);
-    width: 336px;
+    max-width: 336px;
     margin-bottom: 40px;
   }
   @include desk-min {
-    width: 502px;
+    max-width: 502px;
     margin-bottom: 40px;
   }
 }
