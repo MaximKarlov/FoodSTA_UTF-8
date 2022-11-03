@@ -1,3 +1,9 @@
+.hero__container {
+  display: flex;
+}
+.hero__info {
+  margin-right: 178px;
+}
 .hero__title {
   @include font(700, 28px, 1.2);
   max-width: 280px;
@@ -42,5 +48,22 @@
   &:hover,
   &:focus {
     background: #b5ff00;
+  }
+}
+.hero__image {
+  border-radius: 50%;
+}
+.hero__img {
+  border-radius: 50%;
+}
+
+.hero__wrapper-image {
+  border: 14px solid #ffe550;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  @include desk-min {
+    border: 26px solid #ffe550;
   }
 }
