@@ -10,10 +10,10 @@ $modal-rghtbtn-color: #bbf330;
 $modal-btn-border: #7eb101;
 $modal-errbtn-border: #ff705d;
 :root {
-  --primary: rgba(255, 255, 255, 1); //#FEFEFE;
-  --second: rgba(0, 0, 0, 1); //#2C2C2C;
-  --btn-order: rgba(187, 243, 48, 1); //#BBF330;
-  --btn-menu: rgba(126, 177, 1, 1); //#7EB101;
-  --primary-background: rgba(255, 229, 80, 1); //#FFE550;
+  --primary: rgba(255, 255, 255, 1); //#FEFEFE;             White
+  --second: rgba(0, 0, 0, 1); //#2C2C2C;                    Black
+  --btn-order: rgba(187, 243, 48, 1); //#BBF330;            Button green
+  --btn-menu: rgba(126, 177, 1, 1); //#7EB101;              Dark green
+  --primary-background: rgba(255, 229, 80, 1); //#FFE550;   Yellow main
   --shadow-fruit: radial-gradient(50% 50% at 50% 50%, #2f583f 0%, rgba(105, 105, 105, 0) 100%);
 }
