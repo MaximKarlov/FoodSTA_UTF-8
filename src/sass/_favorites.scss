@@ -33,12 +33,6 @@ flex-wrap: wrap;
             margin: 16px 16px;
         }
     }     
- 
-    // &__item:nth-child(2n+1) {
-    //     @media screen and (min-width:768px) and (max-width:1279.5px) {
-    //         margin-right: 32px;
-    //     }
-    // }
 
     &__item:nth-child(n+4) {
         @include mob-max {
@@ -46,15 +40,12 @@ flex-wrap: wrap;
     }
     }
 
+
+
     &__img {
         @include tab-max {
             margin-bottom: 20px;
     }
-
-    // @include tab-min {
-    //     margin: 32px 32px;
-    // }
-
 
         
         margin: auto;
@@ -74,8 +65,9 @@ flex-wrap: wrap;
         
     }
 
-    &__item:hover {
+    &__item:hover &__img {
         border-color: #BBF330;
         cursor: pointer;
     }
+
 }
