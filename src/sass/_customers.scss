@@ -10,8 +10,9 @@
   }
 }
 
-// .customers__box {
-// }
+.customers__box {
+  margin-bottom: 40px;
+}
 .customers {
   max-width: 320px;
   background-position: center;
@@ -23,7 +24,7 @@
   }
 
   @media screen and (min-width: 320px) and (max-width: 767.5px) {
-    width: 100%;
+    max-width: 480px;
     min-height: 769px;
     background-image: url(../img/background/customers/customers480mob@1x.jpg);
     @include retina {
@@ -80,20 +81,20 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 280px;
-  height: 100%;
+  // max-width: 280px;
+  height: auto;
   padding: 8px;
   border-radius: 0 10% 10% 10%;
 
   background-color: var(--primary);
 
   @include tab-min {
-    // max-width: 336px;
+    width: calc((100% - 32px) / 2);
     padding: 12px;
   }
 
   @include desk-min {
-    max-width: 501px;
+  width: calc((100% - 139px) / 2);
     padding: 14px;
     border-radius: 0 30px 30px 30px;
   }
@@ -128,7 +129,7 @@
 
 .customers__comment {
   @include font(700, 16px, 1.19);
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 
   @include tab-min {
     @include font(700, 18px, 1.17);
