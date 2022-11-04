@@ -1,7 +1,19 @@
+.hero__section {
+  padding-top: 0;
+}
+.hero__container {
+  display: flex;
+}
+.hero__info {
+  padding-top: 60px;
+  @include desk-min {
+    padding-top: 159px;
+    margin-right: 178px;
+  }
+}
 .hero__title {
   @include font(700, 28px, 1.2);
   max-width: 280px;
-  padding-top: 60px;
   margin-bottom: 28px;
   @include tab-min {
     @include font(700, 42px, 1.2);
@@ -11,7 +23,6 @@
   @include desk-min {
     @include font(700, 48px, 1.2);
     max-width: 502px;
-    padding-top: 159px;
     margin-bottom: 28px;
   }
 }
@@ -43,4 +54,30 @@
   &:focus {
     background: #b5ff00;
   }
+}
+.hero__slider {
+  display: none;
+  @include tab-min {
+    padding-top: 149px;
+    display: block;
+  }
+  @include desk-min {
+    padding-top: 14px;
+  }
+}
+.hero__wrapper-image {
+  border: 14px solid #ffe550;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  @include desk-min {
+    border: 26px solid #ffe550;
+  }
+}
+.hero__image {
+  border-radius: 50%;
+}
+.hero__img {
+  border-radius: 50%;
 }
