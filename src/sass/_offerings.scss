@@ -2,14 +2,14 @@
   // 320px mobile responsive
 
   @include gum {
-    width: 100%;
+    max-width: 100%;
 
     padding-top: 40px;
     padding-bottom: 60px;
 
     background-image: url(../img/offerings/off-ground-min.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     background-color: var(--primary);
 
@@ -63,7 +63,7 @@
     }
 
     &__icon {
-      fill: #7eb101;
+      fill: var(--btn-menu);
     }
 
     &__benefits {
@@ -93,7 +93,7 @@
 
       background: #ffffff;
 
-      border: 2px solid #7eb101;
+      border: 2px solid var(--btn-menu);
       border-radius: 30px;
       cursor: pointer;
     }
@@ -116,14 +116,14 @@
   // 480px mobile adaptive
 
   @include mob-min {
-    width: 480px;
+    max-width: 480px;
 
     padding-top: 40px;
     padding-bottom: 60px;
 
     background-image: url(../img/offerings/off-ground-mob.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     background-color: var(--primary);
 
@@ -177,7 +177,7 @@
     }
 
     &__icon {
-      fill: #7eb101;
+      fill: var(--btn-menu);
     }
 
     &__benefits {
@@ -207,7 +207,7 @@
 
       background: #ffffff;
 
-      border: 2px solid #7eb101;
+      border: 2px solid var(--btn-menu);
       border-radius: 30px;
       cursor: pointer;
     }
@@ -234,7 +234,7 @@
     padding-top: 150px;
     padding-bottom: 100px;
 
-    width: 768px;
+    max-width: 768px;
 
     background-image: url(../img/offerings/off-ground-tab.png);
     background-repeat: no-repeat;
@@ -318,10 +318,12 @@
 .section--padding-top-50 {
   @include gum {
     padding-top: 50px;
+    padding-bottom: 60px;
   }
 
   @include mob-min {
     padding-top: 50px;
+    padding-bottom: 60px;
   }
 
   @include tab-min {
