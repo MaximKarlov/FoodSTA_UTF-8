@@ -2,8 +2,6 @@
   // 320px mobile responsive
 
   @include gum {
-    width: 100%;
-
     padding-top: 40px;
     padding-bottom: 60px;
 
@@ -116,8 +114,6 @@
   // 480px mobile adaptive
 
   @include mob-min {
-    max-width: 480px;
-
     padding-top: 40px;
     padding-bottom: 60px;
 
@@ -234,8 +230,6 @@
     padding-top: 150px;
     padding-bottom: 100px;
 
-    max-width: 768px;
-
     background-image: url(../img/offerings/off-ground-tab.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,8 +270,6 @@
   // 1280px desktop adaptive
 
   @include desk-min {
-    max-width: 1280px;
-
     display: flex;
     align-items: center;
 
