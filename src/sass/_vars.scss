@@ -1,21 +1,15 @@
 // Тут прописуємо зміні кольорів
 
 :root {
-  --primary: rgba(255, 255, 255, 1);
-  --second: rgba(0, 0, 0, 1);
-  --btn-order: rgb(187, 243, 48);
-  --btn-menu: rgba(126, 177, 1, 1);
-  --submitform-outline: rgb(0, 200, 255);
+  --submitform-outline: rgba(0, 200, 255, 1);
   --submitformalert-border: rgba(255, 112, 93, 1);
-  --placeholder-color: rgb(196, 196, 196);
-  --modal-text-color: rgb(44, 44, 44);
-  --primary-background: rgba(255, 229, 80, 1);
+  --modal-text-color: #2c2c2c;
+
   --primary: rgba(255, 255, 255, 1); //#FEFEFE;             White
-  --second: rgba(0, 0, 0, 1); //#2C2C2C;                    Black
+  --second: rgba(0, 0, 0, 1); //                  Black
   --placeholder-color: rgba(196, 196, 196, 1); //#c4c4c4;
   --btn-order: rgba(187, 243, 48, 1); //#BBF330;            Button green
   --btn-menu: rgba(126, 177, 1, 1); //#7EB101;              Dark green
-  --error: rgba(255, 112, 93, 1); //#ff705d;
   --primary-background: rgba(255, 229, 80, 1); //#FFE550;   Yellow main
   --shadow-fruit: radial-gradient(50% 50% at 50% 50%, #2f583f 0%, rgba(105, 105, 105, 0) 100%);
 }
