@@ -2,14 +2,14 @@
   // 320px mobile responsive
 
   @include gum {
-    max-width: 100%;
+    width: 100%;
 
     padding-top: 40px;
     padding-bottom: 60px;
 
     background-image: url(../img/offerings/off-ground-min.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     background-color: var(--primary);
 
@@ -30,7 +30,7 @@
     &__title {
       @include font(700px, 28px, 1.17);
 
-      max-width: 280px;
+      max-width: 480px;
 
       margin-bottom: 28px;
     }
@@ -38,7 +38,7 @@
     &__advertising {
       @include font(400px, 14px, 1.17);
 
-      max-width: 272px;
+      max-width: 480px;
 
       margin-bottom: 28px;
     }
@@ -144,7 +144,7 @@
     &__title {
       @include font(700px, 28px, 1.17);
 
-      max-width: 280px;
+      max-width: 480px;
 
       margin-bottom: 28px;
     }
@@ -152,7 +152,7 @@
     &__advertising {
       @include font(400px, 14px, 1.17);
 
-      min-width: 272px;
+      max-width: 480px;
 
       margin-bottom: 28px;
     }
@@ -276,6 +276,8 @@
   // 1280px desktop adaptive
 
   @include desk-min {
+    max-width: 1280px;
+
     display: flex;
     align-items: center;
 
