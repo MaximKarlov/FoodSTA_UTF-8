@@ -112,7 +112,7 @@
     border-radius: 30px;
     padding: 11px 22px;
     cursor: pointer;
-    background: $modal-rghtbtn-color;
+    background:  var(--btn-order);
     border: none;
 
     @include gum {
