@@ -5,8 +5,8 @@
     width: 100%;
 
     padding-top: 40px;
+    padding-bottom: 60px;
 
-    @include wh(100%, 1050px);
     background-image: url(../img/offerings/off-ground-min.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,11 +116,11 @@
   // 480px mobile adaptive
 
   @include mob-min {
-    padding-top: 40px;
-
     width: 480px;
 
-    @include wh(480px, 1050px);
+    padding-top: 40px;
+    padding-bottom: 60px;
+
     background-image: url(../img/offerings/off-ground-mob.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,10 +232,10 @@
   @include tab-min {
     margin-top: -108px;
     padding-top: 150px;
+    padding-bottom: 100px;
 
     width: 768px;
 
-    @include wh(768px, 1140px);
     background-image: url(../img/offerings/off-ground-tab.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,18 +276,12 @@
   // 1280px desktop adaptive
 
   @include desk-min {
-    &__border {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 231px;
-    }
-
     display: flex;
     align-items: center;
 
     padding-top: 177px;
-    margin-bottom: -161px;
+    padding-bottom: 43px;
+    margin-top: -161px;
 
     @include wh(1280px, 824px);
     background-image: url(../img/offerings/off-ground-desk.png);
