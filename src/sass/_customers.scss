@@ -11,8 +11,10 @@
 }
 
 .customers__box {
-  margin-bottom: 40px;
+display: flex;
+flex-direction: column;
 }
+
 .customers {
   max-width: 320px;
   background-position: center;
@@ -80,7 +82,8 @@
 .customers__item {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  justify-content: space-between;
+  // flex-grow: 1;
   // max-width: 280px;
   height: auto;
   padding: 8px;
@@ -94,7 +97,7 @@
   }
 
   @include desk-min {
-  width: calc((100% - 139px) / 2);
+    width: calc((100% - 139px) / 2);
     padding: 14px;
     border-radius: 0 30px 30px 30px;
   }
@@ -129,7 +132,7 @@
 
 .customers__comment {
   @include font(700, 16px, 1.19);
-  // margin-bottom: 40px;
+  margin-bottom: 40px;
 
   @include tab-min {
     @include font(700, 18px, 1.17);
