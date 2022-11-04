@@ -36,9 +36,6 @@
 .logo-link__svg {
   width: 69px;
 }
-.footer-nav {
-  margin-right: 100px;
-}
 
 .footer-nav__list {
   display: flex;
@@ -112,6 +109,12 @@
     width: 280px;
   }
 }
+.desktop {
+  @media screen and(min-width:1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer-subs__btn {
   display: block;
   align-self: flex-end;
@@ -183,10 +186,5 @@
   padding-top: 40px;
   @media screen and(min-width:768px) {
     padding-top: 60px;
-  }
-}
-.desktop {
-  @media screen and(min-width:1280px) {
-    display: flex;
   }
 }
