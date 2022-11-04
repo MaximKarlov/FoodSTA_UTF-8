@@ -143,6 +143,9 @@
   text-align: center;
   margin-top: 82px;
   color: var(--modal-text-color);
+  @include tab-min {
+    margin-top: 12px;
+  }
 }
 
 .footer-link__link,
