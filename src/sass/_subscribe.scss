@@ -1,24 +1,17 @@
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
 .sub-section__header{
     flex-direction: row-reverse;
 
     @include mob-max {
         display: block;
-        max-width: 480px;
-        margin-top: -90px;
+        margin-top: -70px;
     }
     
     @include tab-min {
-        max-width: 768px;;
         display: block;
         margin: 0 auto;
     }
 
     @include desk-min {
-        max-width: 1200px;;
         display: flex;
         margin: 0 auto;
     }
@@ -94,7 +87,7 @@
 }
 
 .sub-section__input {
-    border: 1px solid yellow;
+    border: 1px solid var(--primary-background);
     padding: 16px;
     border-radius: 30px;
     padding: 12px 57px 12px 12px;
@@ -119,7 +112,7 @@
     border-radius: 30px;
     padding: 11px 22px;
     cursor: pointer;
-    background: #BBF330;;
+    background:  var(--btn-order);
     border: none;
 
     @include gum {
@@ -131,10 +124,6 @@
 .sub-section__image {
     display: flex;
 
-    @include gum {
-        width: auto;
-    }
-
     @include mob-max {
         padding-bottom: 20px;
         justify-content: center;
@@ -143,21 +132,13 @@
     @include tab-min {
         @include tab-max {
         padding-bottom: 20px;
-        justify-content: center;
-        margin-left: auto;
-        width: 281px;
+        justify-content: end;
     }
     }   
 }
 
-.sub-section__banan {
-
-    @include mob-max {
-        margin: 0;
-        width: 281px;
-    }
-        
+.sub-section__banan {      
     @include tab-min {
-        margin-top: -46px;
+        margin-top: -70px
     }
 }

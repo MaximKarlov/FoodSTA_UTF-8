@@ -10,7 +10,7 @@
   opacity: 1;
   transition-property: opacity;
   transition-duration: 250ms;
-  // transition-timing-function: $all-hovfoc-function;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -36,14 +36,14 @@
   padding-left: 20px;
   padding-bottom: 32px;
 
-  background-color: $modal-background;
+  background-color: var(--primary-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
 
   transform: translate(-50%, -50%) scale(1);
   transition-property: opacity;
   transition-duration: 250ms;
-  transition-timing-function: $all-hovfoc-function;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop__close-btn {
@@ -53,25 +53,27 @@
   right: 16px;
   top: 16px;
 
-  background: $modal-btn-color;
+  background: var(--primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
   border-radius: 50%;
   @include flex;
+
+  cursor: pointer;
 }
 
 .backdrop__title {
-  @include font(700, 24, 1.2);
-  color: $modal-text-color;
+  @include font2(700, 24, 1.2);
+  color: var(--modal-text-color);
 
   text-align: center;
   margin-bottom: 20px;
 }
 
 .submit-form__label {
-  @include font(500, 16, 1.4);
+  @include font2(500, 16, 1.4);
 
-  color: $modal-text-color;
+  color: var(--modal-text-color);
   margin-bottom: 2px;
   margin-left: 12px;
 }
@@ -79,24 +81,26 @@
 .submit-form__input {
   width: 100%;
   height: 48px;
-  border: 1px solid #7eb101;
+  border: 1px solid var(--submitform-border);
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   padding-left: 12px;
-  @include font(400, 16, 1.25);
+  @include font2(400, 16, 1.25);
+}
 
+.submit-form__field:not(:last-child) {
   margin-bottom: 24px;
 }
 
 .submit-form__input:focus {
-  border: 1px solid tomato;
+  border: 1px solid var(--submitform-outline);
   outline: none;
 }
 
 .submit-form__input::placeholder {
-  @include font(400, 16, 1.25);
+  @include font2(400, 16, 1.25);
 
-  color: $modal-placeholder-color;
+  color: var(--placeholder-color);
 }
 
 .submit-form__btn-submit {
@@ -110,25 +114,25 @@
   margin-right: auto;
 
   @include font2(500, 13, 1.5);
-  color: $modal-text-color;
+  color: var(--modal-text-color);
 
-  background: $modal-btn-color;
-  border: 2px solid $modal-btn-border;
+  background: var(--btn-order);
+  border: 2px solid var(--btn-menu);
   border-radius: 30px;
 }
 
 .submit-form__btn-submit--right {
-  background: $modal-rghtbtn-color;
+  background: var(--btn-order);
 }
 
 .submit-form__btn-submit--error {
-  background: $modal-btn-color;
-  border: 2px solid $modal-errbtn-border;
+  background: var(--primary);
+  border: 2px solid var(--submitformalert-border);
 }
 
 .submit-form__input-alert {
-  @include font(500, 11, 1.4);
-  color: $modal-errbtn-border;
+  @include font2(500, 11, 1.4);
+  color: var(--submitformalert-border);
   margin-left: 12px;
 }
 
@@ -140,8 +144,8 @@
 }
 
 .submit-form__input-requirement {
-  @include font(500, 13, 1.4);
-  color: $modal-errbtn-border;
+  @include font2(500, 13, 1.4);
+  color: var(--submitformalert-border);
   margin-left: 12px;
 }
 
@@ -157,23 +161,34 @@
   }
 }
 
-.submit-form__input-wrap{
+@include desk-min {
+  .backdrop__modal {
+    min-width: 458px;
+  }
+}
+
+.submit-form__input-wrap {
   position: relative;
 }
- 
+
 .submit-form .error {
-  background-image: url("/src/img/svg/Frame.svg");
+  background-image: url('/src/img/svg/Frame.svg');
   background-position: top left;
   background-repeat: no-repeat;
   padding-left: 15px;
-  color: $modal-errbtn-border;
+  color: var(--submitformalert-border);
   font-weight: 500;
   font-size: 13px;
   line-height: 1.1;
   margin-top: 4px;
   display: inline-block;
   position: absolute;
-  left: 25px;
-  bottom: 5px;
+  left: 13px;
+  bottom: -20px;
 }
 
+@include mob-max {
+  .submit-form .warning {
+    bottom: -30px;
+  }
+}
