@@ -1,5 +1,9 @@
 .sub-section__header {
   flex-direction: row-reverse;
+  @media screen and(max-width:479.5px) {
+    display: block;
+    margin-top: -50px;
+  }
 
   @include mob-max {
     display: block;
