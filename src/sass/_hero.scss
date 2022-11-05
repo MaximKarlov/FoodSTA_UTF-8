@@ -1,5 +1,6 @@
 .hero__section {
   padding-top: 0;
+  padding-bottom: 0;
 }
 .hero__container {
   display: flex;
@@ -46,7 +47,7 @@
 .hero__btn {
   background: #bbf330;
   border-radius: 30px;
-  padding: 6px 18px;
+  padding: 10px 22px;
   border: none;
   text-align: right;
   cursor: pointer;
@@ -81,27 +82,58 @@
 }
 .hero__img {
   border-radius: 50%;
+  max-width: 292px;
+  @include desk-min {
+    max-width: 528px;
+  }
 }
 .carousel-prev-icon {
-  transform: translate(-35%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-25%, -50%);
+  padding: 5.5px 13px;
   position: absolute;
-  top: calc(50% + 7px);
-  left: 0;
-  width: 40px;
-  height: 48px;
+  top: 50%;
+  left: -3px;
+  width: 48px;
+  height: 40px;
+  background: #fefefe;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  &:hover,
+  &:focus {
+    fill: #7eb101;
+  }
   @include tab-max {
     top: calc(50% + 75px);
+    padding: 4px 13.5px;
+    width: 38px;
+    height: 28px;
   }
 }
 .carousel-next-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: translate(+15%, -50%);
+  padding: 5.5px 13px;
   position: absolute;
-  top: calc(50% + 7px);
-  right: 0;
-  width: 40px;
-  height: 48px;
+  top: 50%;
+  right: -6px;
+  width: 48px;
+  height: 40px;
+  background: #fefefe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  &:hover,
+  &:focus {
+    fill: #7eb101;
+  }
   @include tab-max {
     top: calc(50% + 75px);
+    padding: 4px 13.5px;
+    width: 38px;
+    height: 28px;
   }
 }
