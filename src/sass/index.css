@@ -415,6 +415,10 @@ img {
   }
 }
 
+.pad {
+  padding-bottom: 20px;
+}
+
 .customers__box {
   display: flex;
   flex-direction: column;
