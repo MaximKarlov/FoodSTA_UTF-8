@@ -183,6 +183,13 @@
   margin-top: 4px;
   display: inline-block;
   position: absolute;
-  left: 25px;
-  bottom: 5px;
+  left: 13px;
+  bottom: -20px;
 }
+
+@include mob-max {
+  .submit-form .warning {
+    bottom: -30px;
+  }
+}
+
