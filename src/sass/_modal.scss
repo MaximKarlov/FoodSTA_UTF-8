@@ -167,16 +167,16 @@
   }
 }
 
-.submit-form__input-wrap{
+.submit-form__input-wrap {
   position: relative;
 }
- 
+
 .submit-form .error {
-  background-image: url("/src/img/svg/Frame.svg");
+  background-image: url('/src/img/svg/Frame.svg');
   background-position: top left;
   background-repeat: no-repeat;
   padding-left: 15px;
-  color: $modal-errbtn-border;
+  color: var(--submitformalert-border);
   font-weight: 500;
   font-size: 13px;
   line-height: 1.1;
@@ -186,4 +186,3 @@
   left: 25px;
   bottom: 5px;
 }
-
