@@ -11,7 +11,10 @@
 }
 
 .customers__box {
+display: flex;
+flex-direction: column;
 }
+
 .customers {
   max-width: 320px;
   background-position: center;
@@ -77,20 +80,24 @@
 }
 
 .customers__item {
-  max-width: 280px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // flex-grow: 1;
+  // max-width: 280px;
+  height: auto;
   padding: 8px;
   border-radius: 0 10% 10% 10%;
 
-  background-color: #ffffff;
+  background-color: var(--primary);
 
   @include tab-min {
-    max-width: 336px;
+    width: calc((100% - 32px) / 2);
     padding: 12px;
   }
 
   @include desk-min {
-    max-width: 501px;
+    width: calc((100% - 139px) / 2);
     padding: 14px;
     border-radius: 0 30px 30px 30px;
   }
@@ -146,7 +153,7 @@
   flex-direction: column;
   justify-content: space-around;
   padding-right: 16px;
-  border-right: 0.85px solid rgba(126, 177, 1, 1);
+  border-right: 0.85px solid var(--btn-menu);
 }
 .avatar__name {
   @include font(500, 14px, 1.5);

@@ -1,21 +1,16 @@
-// Тут прописуєм зміні кольорів
+// Тут прописуємо зміні кольорів
 
-//Modal variables
-$all-hovfoc-function: cubic-bezier(0.4, 0, 0.2, 1);
-$modal-background: #ffe550;
-$modal-text-color: #2c2c2c;
-$modal-placeholder-color: #c4c4c4;
-$modal-btn-color: #ffffff;
-$modal-rghtbtn-color: #bbf330;
-$modal-btn-border: #7eb101;
-$modal-errbtn-border: #ff705d;
 :root {
+  --submitform-outline: rgba(0, 200, 255, 1);
+  --submitformalert-border: rgba(255, 112, 93, 1);
+  --modal-text-color: #2c2c2c;
+
   --primary: rgba(255, 255, 255, 1); //#FEFEFE;             White
-  --second: rgba(0, 0, 0, 1); //#2C2C2C;                    Black
+  --second: rgba(0, 0, 0, 1); //                  Black
   --placeholder-color: rgba(196, 196, 196, 1); //#c4c4c4;
   --btn-order: rgba(187, 243, 48, 1); //#BBF330;            Button green
   --btn-menu: rgba(126, 177, 1, 1); //#7EB101;              Dark green
-  --error: rgba(255, 112, 93, 1); //#ff705d;
   --primary-background: rgba(255, 229, 80, 1); //#FFE550;   Yellow main
   --shadow-fruit: radial-gradient(50% 50% at 50% 50%, #2f583f 0%, rgba(105, 105, 105, 0) 100%);
+  --btn-hover: #b5ff00;
 }
