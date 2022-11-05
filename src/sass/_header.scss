@@ -67,4 +67,15 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
+}
+.menu-icon {
+  fill: #7eb101;
+  &:hover,
+  &:focus {
+    fill: #ffe550;
+  }
 }
