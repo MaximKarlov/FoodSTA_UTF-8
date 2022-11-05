@@ -1,5 +1,6 @@
 .hero__section {
   padding-top: 0;
+  padding-bottom: 0;
 }
 .hero__container {
   display: flex;
@@ -46,7 +47,7 @@
 .hero__btn {
   background: #bbf330;
   border-radius: 30px;
-  padding: 6px 18px;
+  padding: 10px 22px;
   border: none;
   text-align: right;
   cursor: pointer;
@@ -81,6 +82,10 @@
 }
 .hero__img {
   border-radius: 50%;
+  max-width: 292px;
+  @include desk-min {
+    max-width: 528px;
+  }
 }
 .carousel-prev-icon {
   display: flex;
@@ -96,6 +101,10 @@
   background: #fefefe;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  &:hover,
+  &:focus {
+    fill: #7eb101;
+  }
   @include tab-max {
     top: calc(50% + 75px);
     padding: 4px 13.5px;
@@ -117,6 +126,10 @@
   background: #fefefe;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  &:hover,
+  &:focus {
+    fill: #7eb101;
+  }
   @include tab-max {
     top: calc(50% + 75px);
     padding: 4px 13.5px;
