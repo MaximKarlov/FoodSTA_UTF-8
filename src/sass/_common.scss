@@ -5,8 +5,6 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
-  color: #2c2c2c;
 }
 
 h1,
@@ -45,13 +43,13 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: 450px;
+  max-width: 480px;
   @media screen and (min-width: 768px) {
     padding: 0 32px;
-    width: 738px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1280px) {
     padding: 0 16px;
-    width: 1250px;
+    max-width: 1280px;
   }
 }
