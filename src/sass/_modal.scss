@@ -57,6 +57,8 @@
 
   border-radius: 50%;
   @include flex;
+
+  cursor: pointer;
 }
 
 .backdrop__title {
