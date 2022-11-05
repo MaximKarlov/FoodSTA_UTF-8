@@ -1,10 +1,10 @@
 .hero__section {
   padding-top: 0;
   padding-bottom: 0;
-
 }
 .hero__container {
   display: flex;
+  justify-content: space-between;
 }
 .hero__info {
   padding-top: 60px;
@@ -60,37 +60,44 @@
 .hero__slider {
   position: relative;
   display: none;
+
   @include tab-min {
     padding-top: 149px;
     display: block;
+    max-width: 292px;
   }
+
   @include desk-min {
     padding-top: 14px;
-  }
-}
-.hero__wrapper-image {
-  border: 14px solid #ffe550;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  @include desk-min {
-    border: 26px solid #ffe550;
-  }
-}
-.hero__image {
-  border-radius: 50%;
-}
-.hero__img {
-  border-radius: 50%;
-
-  max-width: 292px;
-  @include desk-min {
     max-width: 528px;
   }
-
 }
-.carousel-prev-icon {
+
+.hero__slider .hero__slides {
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.hero__slider .hero__slider-window {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__img {
+  border: 14px solid #ffe550;
+  border-radius: 50%;
+  max-width: 292px;
+
+  @include desk-min {
+    border: 26px solid #ffe550;
+    max-width: 528px;
+  }
+}
+
+.hero__slider-prev {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +124,7 @@
     height: 28px;
   }
 }
-.carousel-next-icon {
+.hero__slider-next {
   display: flex;
   align-items: center;
   justify-content: center;
