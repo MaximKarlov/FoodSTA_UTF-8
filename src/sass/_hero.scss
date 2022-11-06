@@ -15,7 +15,6 @@
 }
 .hero__title {
   @include font(700, 28px, 1.2);
-  max-width: 480px;
   margin-bottom: 28px;
   @include tab-min {
     @include font(700, 42px, 1.2);
@@ -31,7 +30,6 @@
 
 .hero__text {
   @include font(400, 14px, 1.5);
-  max-width: 480px;
   margin-bottom: 28px;
 
   @include tab-min {
