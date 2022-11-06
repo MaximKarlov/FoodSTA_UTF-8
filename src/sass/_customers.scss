@@ -10,9 +10,13 @@
   }
 }
 
+.pad {
+  padding-bottom: 20px;
+}
+
 .customers__box {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .customers {

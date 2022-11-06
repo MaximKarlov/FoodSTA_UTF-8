@@ -65,6 +65,6 @@ class Slider {
   }
 
   play() {
-    this.paused = setInterval(() => this.next(), 3000);
+    this.paused = setInterval(() => this.next(), 6000);
   }
 }
