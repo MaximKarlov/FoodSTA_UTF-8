@@ -55,12 +55,13 @@
 }
 .footer-nav__item {
   &:not(:first-child) {
-    margin-top: 20px;
+    padding-top: 20px;
   }
   @include tab-min {
     &:not(:first-child) {
       margin-top: 0;
       margin-left: 28px;
+      padding: 10 0;
     }
   }
 }
@@ -68,6 +69,7 @@
   @include font(400, 14, 1.17);
   color: var(--second);
   text-decoration: none;
+  padding: 9px 0px 9px 0px;
 }
 .footer-subs {
   margin-top: 40px;
