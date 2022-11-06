@@ -164,3 +164,9 @@
     min-width: 458px;
   }
 }
+
+@media screen and (max-width: 319.5px) {
+  .backdrop__modal {
+    min-width: 95vw;
+  }
+}
