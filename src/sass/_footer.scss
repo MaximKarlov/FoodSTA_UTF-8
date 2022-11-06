@@ -1,25 +1,25 @@
-.footer {
-  width: 100%;
+.foot {
+  width: auto;
   margin: 0 auto;
+  background-color: aqua;
   background-image: url(../img/background/footer/mobile_bgi_bottom.jpg), url(../img/background/footer/mobile_bgi_left.jpg),
     url(../img/background/footer/mobile_bgi_right.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom, left, right;
   background-position-y: bottom, 150px, top;
-  @include mob-max {
-    max-width: 480px;
-  }
+  background-size: 70%, 20%, 25%;
+
   @include tab-min {
-    background-image: url(../img/background/footer/tablet_bgi.jpg);
+    background-image: url(../img/background/footer//tablet_bgi.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    width: 768px;
+    background-size: 100%;
   }
   @include desk-min {
     background-image: url(../img/background/footer/desktop_bgi.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    width: 1280px;
+    background-size: 100%;
   }
 }
 .navi {
