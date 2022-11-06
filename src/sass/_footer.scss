@@ -29,7 +29,10 @@
     justify-content: left;
   }
 }
-
+.footer-nav {
+  display: flex;
+  margin-right: 100px;
+}
 .logo-link--footer {
   display: block;
 }
@@ -52,12 +55,13 @@
 }
 .footer-nav__item {
   &:not(:first-child) {
-    margin-top: 20px;
+    padding-top: 20px;
   }
   @include tab-min {
     &:not(:first-child) {
       margin-top: 0;
       margin-left: 28px;
+      padding: 10 0;
     }
   }
 }
@@ -65,6 +69,7 @@
   @include font(400, 14, 1.17);
   color: var(--second);
   text-decoration: none;
+  padding: 9px 0px 9px 0px;
 }
 .footer-subs {
   margin-top: 40px;
@@ -91,7 +96,7 @@
   width: 100%;
   height: 42px;
   border-style: none;
-  border: solid 2px var(--primary-background);
+  border: solid 0.854167px var(--primary-background);
   border-radius: 30px;
   padding-left: 12px;
   margin-top: 12px;
@@ -117,8 +122,9 @@
   width: 100px;
   height: 42px;
   border-radius: 30px;
-  border: none;
-  background-color: var(--btn-order);
+  border: 0.854167px solid var(--btn-menu);
+  background: #ffffff;
+
   float: right;
   margin-top: 20px;
   @include font(500, 13, 1.5);
@@ -127,7 +133,7 @@
   &:focus,
   &:active {
     outline: none;
-    background-color: var(--btn-hover);
+    background-color: var(--primary-background);
   }
 
   @include tab-min {
