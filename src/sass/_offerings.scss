@@ -2,268 +2,64 @@
   // 320px mobile responsive
 
   @include gum {
+    margin: 0 auto;
+    width: 100%;
+
     padding-top: 40px;
     padding-bottom: 60px;
+    margin-top: 50px;
 
     background-image: url(../img/offerings/off-ground-min.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     background-color: var(--primary);
 
     @include retina {
       background-image: url(../img/offerings/off-ground-min-2x.png);
     }
-
-    &__img {
-      display: block;
-
-      max-width: 280px;
-
-      margin-right: auto;
-      margin-bottom: 60px;
-      margin-left: auto;
-    }
-
-    &__title {
-      @include font(700px, 28px, 1.17);
-
-      max-width: 480px;
-
-      margin-bottom: 28px;
-    }
-
-    &__advertising {
-      @include font(400px, 14px, 1.17);
-
-      max-width: 480px;
-
-      margin-bottom: 28px;
-    }
-
-    &__item {
-      max-width: 252px;
-      margin-bottom: 28px;
-    }
-
-    &__box {
-      @include wh(48px, 48px);
-      display: flex;
-      border-radius: 50%;
-
-      justify-content: center;
-      align-items: center;
-
-      background-color: #fff;
-      background-repeat: no-repeat;
-
-      margin-bottom: 8px;
-    }
-
-    &__icon {
-      fill: var(--btn-menu);
-    }
-
-    &__benefits {
-      @include font(700px, 18px, 1.17);
-
-      margin-bottom: 16px;
-    }
-
-    &__text {
-      @include font(400px, 14px, 1.17);
-
-      margin-bottom: 28px;
-    }
-
-    &__wrapper {
-      display: flex;
-
-      align-items: baseline;
-    }
-
-    &__button {
-      @include font(500px, 13px, 1.5);
-
-      padding: 10px 22px;
-
-      margin-right: 24px;
-
-      background: #ffffff;
-
-      border: 2px solid var(--btn-menu);
-      border-radius: 30px;
-      cursor: pointer;
-    }
-
-    &__button:hover,
-    &__button:focus,
-    &__button:active {
-      border: 2px solid #597d00;
-    }
-
-    &__link {
-      @include font(400px, 13.7px, 1.5);
-
-      color: #000000;
-
-      text-decoration: none;
-    }
   }
 
   // 480px mobile adaptive
 
   @include mob-min {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+
     padding-top: 40px;
     padding-bottom: 60px;
+    margin-top: 50px;
 
     background-image: url(../img/offerings/off-ground-mob.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 
     background-color: var(--primary);
 
     @include retina {
       background-image: url(../img/offerings/off-ground-mob-2x.png);
     }
-
-    &__img {
-      display: block;
-
-      max-width: 280px;
-
-      margin-right: auto;
-      margin-bottom: 60px;
-      margin-left: auto;
-    }
-
-    &__title {
-      @include font(700px, 28px, 1.17);
-
-      max-width: 480px;
-
-      margin-bottom: 28px;
-    }
-
-    &__advertising {
-      @include font(400px, 14px, 1.17);
-
-      max-width: 480px;
-
-      margin-bottom: 28px;
-    }
-
-    &__item {
-      max-width: 252px;
-      margin-bottom: 28px;
-    }
-
-    &__box {
-      @include wh(48px, 48px);
-      display: flex;
-      border-radius: 50%;
-
-      justify-content: center;
-      align-items: center;
-
-      background-color: #fff;
-      background-repeat: no-repeat;
-
-      margin-bottom: 8px;
-    }
-
-    &__icon {
-      fill: var(--btn-menu);
-    }
-
-    &__benefits {
-      @include font(700px, 18px, 1.17);
-
-      margin-bottom: 16px;
-    }
-
-    &__text {
-      @include font(400px, 14px, 1.17);
-
-      margin-bottom: 28px;
-    }
-
-    &__wrapper {
-      display: flex;
-
-      align-items: baseline;
-    }
-
-    &__button {
-      @include font(500px, 13px, 1.5);
-
-      padding: 10px 22px;
-
-      margin-right: 24px;
-
-      background: #ffffff;
-
-      border: 2px solid var(--btn-menu);
-      border-radius: 30px;
-      cursor: pointer;
-    }
-
-    &__button:hover,
-    &__button:focus,
-    &__button:active {
-      border: 2px solid #597d00;
-    }
-
-    &__link {
-      @include font(400px, 13.7px, 1.5);
-
-      color: #000000;
-
-      text-decoration: none;
-    }
   }
 
   // 768px tablet adaptive
 
   @include tab-min {
+    width: 100%;
+    max-width: 768px;
+
     margin-top: -108px;
-    padding-top: 150px;
     padding-bottom: 100px;
 
     background-image: url(../img/offerings/off-ground-tab.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     @include retina {
       background-image: url(../img/offerings/off-ground-tab-2x.png);
-    }
-
-    &__img {
-      max-width: 704px;
-    }
-
-    &__content {
-      padding-left: 12px;
-    }
-
-    &__title {
-      @include font(700px, 42px, 1.17);
-      max-width: 526px;
-      margin-bottom: 20px;
-    }
-
-    &__advertising {
-      @include font(400px, 16px, 1.17);
-      max-width: 500px;
-      margin-bottom: 40px;
-    }
-
-    &__list {
-      display: flex;
-    }
-
-    &__item:not(:last-child) {
-      margin-right: 116px;
     }
   }
 
@@ -273,54 +69,295 @@
     display: flex;
     align-items: center;
 
+    width: 100%;
+    max-width: 1280px;
+
     padding-top: 177px;
-    padding-bottom: 43px;
+    // padding-bottom: 43px;
     margin-top: -161px;
 
     @include wh(1280px, 824px);
     background-image: url(../img/offerings/off-ground-desk.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     @include retina {
       background-image: url(../img/offerings/off-ground-desk-2x.png);
     }
-
-    &__img {
-      max-width: 550px;
-      min-height: 550px;
-
-      margin-right: 90px;
-      margin-bottom: 43px;
-      margin-left: 16px;
-    }
-
-    &__content {
-      padding-left: 0;
-    }
-
-    &__item:not(:last-child) {
-      margin-right: 67px;
-    }
-
-    &__link {
-      display: none;
-    }
   }
 }
 
-.section--padding-top-50 {
+.offerings__img {
   @include gum {
-    padding-top: 50px;
-    padding-bottom: 60px;
+    display: block;
+
+    max-width: 280px;
+
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
   }
 
   @include mob-min {
-    padding-top: 50px;
-    padding-bottom: 60px;
+    display: block;
+
+    max-width: 280px;
+
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
   }
 
   @include tab-min {
-    padding: 0;
+    padding-top: 150px;
+    max-width: 704px;
+  }
+
+  @include desk-min {
+    max-width: 550px;
+    max-height: 550px;
+
+    padding-top: 0;
+    margin-right: 90px;
+    margin-bottom: 43px;
+    margin-left: 16px;
+  }
+}
+
+.offerings__content {
+  @include tab-min {
+    padding-left: 12px;
+  }
+
+  @include desk-min {
+    padding-left: 0;
+  }
+}
+
+.offerings__title {
+  @include gum {
+    @include font(700px, 28px, 1.17);
+
+    max-width: 480px;
+
+    margin-bottom: 28px;
+  }
+
+  @include mob-min {
+    @include font(700px, 28px, 1.17);
+
+    max-width: 480px;
+
+    margin-bottom: 28px;
+  }
+
+  @include tab-min {
+    @include font(700px, 42px, 1.17);
+    max-width: 526px;
+    margin-bottom: 20px;
+  }
+}
+
+.offerings__advertising {
+  @include gum {
+    @include font(400px, 14px, 1.17);
+
+    max-width: 100%;
+
+    margin-bottom: 28px;
+  }
+
+  @include mob-min {
+    @include font(400px, 14px, 1.17);
+
+    max-width: 100%;
+
+    margin-bottom: 28px;
+  }
+
+  @include tab-min {
+    @include font(400px, 16px, 1.17);
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+}
+
+.offerings__list {
+  @include tab-min {
+    display: flex;
+  }
+}
+
+.offerings__item {
+  @include gum {
+    max-width: 252px;
+    margin-bottom: 28px;
+  }
+
+  @include mob-min {
+    max-width: 252px;
+    margin-bottom: 28px;
+  }
+}
+
+.offerings__item:not(:last-child) {
+  @include tab-min {
+    margin-right: 116px;
+  }
+
+  @include desk-min {
+    margin-right: 67px;
+  }
+}
+
+.offerings__box {
+  @include gum {
+    @include wh(48px, 48px);
+    display: flex;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+    margin-bottom: 8px;
+  }
+
+  @include mob-min {
+    @include wh(48px, 48px);
+    display: flex;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+    margin-bottom: 8px;
+  }
+}
+
+.offerings__icon {
+  @include gum {
+    fill: var(--btn-menu);
+  }
+
+  @include mob-min {
+    fill: var(--btn-menu);
+  }
+}
+
+.offerings__benefits {
+  @include gum {
+    @include font(700px, 18px, 1.17);
+
+    margin-bottom: 16px;
+  }
+
+  @include mob-min {
+    @include font(700px, 18px, 1.17);
+
+    margin-bottom: 16px;
+  }
+}
+
+.offerings__text {
+  @include gum {
+    @include font(400px, 14px, 1.17);
+
+    margin-bottom: 28px;
+  }
+
+  @include mob-min {
+    @include font(400px, 14px, 1.17);
+
+    margin-bottom: 28px;
+  }
+}
+
+.offerings__wrapper {
+  @include gum {
+    display: flex;
+
+    align-items: baseline;
+  }
+
+  @include mob-min {
+    display: flex;
+
+    align-items: baseline;
+  }
+}
+
+.offerings__button {
+  @include gum {
+    @include font(500px, 13px, 1.5);
+
+    padding: 10px 22px;
+
+    margin-right: 24px;
+
+    background: #ffffff;
+
+    border: 2px solid var(--btn-menu);
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  @include mob-min {
+    @include font(500px, 13px, 1.5);
+
+    padding: 10px 22px;
+
+    margin-right: 24px;
+
+    background: #ffffff;
+
+    border: 2px solid var(--btn-menu);
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  @include tab-min {
+    // margin-bottom: 100px;
+  }
+}
+
+.offerings__button:hover,
+.offerings__button:focus,
+.offerings__button:active {
+  border: 2px solid #597d00;
+}
+
+.offerings__link {
+  @include gum {
+    @include font(400px, 13.7px, 1.5);
+
+    color: #000000;
+
+    text-decoration: none;
+  }
+
+  @include mob-min {
+    @include font(400px, 13.7px, 1.5);
+
+    color: #000000;
+
+    text-decoration: none;
+  }
+
+  @include desk-min {
+    display: none;
+  }
+}
+
+.offerings__container {
+  @include desk-min {
+    display: flex;
+    align-items: center;
   }
 }
