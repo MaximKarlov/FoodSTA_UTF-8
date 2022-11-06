@@ -81,9 +81,10 @@
 .submit-form__input {
   width: 100%;
   height: 48px;
-  border: 1px solid var(--submitform-border);
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  border: 1px solid var(--btn-menu);
+
   padding-left: 12px;
   @include font2(400, 16, 1.25);
 }
@@ -116,7 +117,7 @@
   @include font2(500, 13, 1.5);
   color: var(--modal-text-color);
 
-  background: var(--btn-order);
+  background: var(--primary);
   border: 2px solid var(--btn-menu);
   border-radius: 30px;
 }
@@ -167,6 +168,18 @@
   }
 }
 
+@media screen and (max-width: 319.5px) {
+  .backdrop__modal {
+    min-width: 100vw;
+  }
+
+  .submit-form__input-requirement {
+    @include font2(500, 3, 1.4);
+    color: var(--submitformalert-border);
+    margin-left: 12px;
+  }
+}
+
 .submit-form__input-wrap {
   position: relative;
 }
@@ -192,4 +205,3 @@
     bottom: -30px;
   }
 }
-
