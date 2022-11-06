@@ -1,7 +1,6 @@
 .foot {
   width: auto;
   margin: 0 auto;
-  background-color: aqua;
   background-image: url(../img/background/footer/mobile_bgi_bottom.jpg), url(../img/background/footer/mobile_bgi_left.jpg),
     url(../img/background/footer/mobile_bgi_right.jpg);
   @include retina {
