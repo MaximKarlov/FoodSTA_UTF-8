@@ -1,9 +1,12 @@
 .foot {
   width: auto;
   margin: 0 auto;
-  background-color: aqua;
   background-image: url(../img/background/footer/mobile_bgi_bottom.jpg), url(../img/background/footer/mobile_bgi_left.jpg),
     url(../img/background/footer/mobile_bgi_right.jpg);
+  @include retina {
+    background-image: url(../img/background/footer/mobile_bgi_bottom_2x.jpg), url(../img/background/footer/mobile_bgi_left_2x.jpg),
+      url(../img/background/footer/mobile_bgi_right_2x.jpg);
+  }
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom, left, right;
   background-position-y: bottom, 150px, top;
@@ -14,11 +17,17 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    @include retina {
+      background-image: url(../img/background/footer//tablet_bgi_2x.jpg);
+    }
   }
   @include desk-min {
     background-image: url(../img/background/footer/desktop_bgi.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
+    @include retina {
+      background-image: url(../img/background/footer/desktop_bgi_2x.jpg);
+    }
   }
 }
 .navi {
