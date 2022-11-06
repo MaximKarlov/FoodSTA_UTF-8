@@ -167,6 +167,12 @@
   }
 }
 
+@media screen and (max-width: 319.5px) {
+  .backdrop__modal {
+    min-width: 99vw;
+  }
+}
+
 .submit-form__input-wrap {
   position: relative;
 }
