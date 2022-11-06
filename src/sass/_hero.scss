@@ -118,7 +118,9 @@
   &:focus {
     fill: var(--btn-menu);
   }
-
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
   @include tab-max {
     top: calc(50% + 75px);
     padding: 4px 13.5px;
@@ -145,7 +147,9 @@
   &:focus {
     fill: var(--btn-menu);
   }
-
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
   @include tab-max {
     top: calc(50% + 75px);
     padding: 4px 13.5px;
