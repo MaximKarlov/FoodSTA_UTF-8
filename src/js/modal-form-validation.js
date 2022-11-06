@@ -8,14 +8,13 @@ $(document).ready(function () {
     $('.error').remove();
 
     if (username.length < 1) {
-        $('#username').after('<span class="error">This field is required</span>');
+      $('#username').after('<span class="error">This field is required</span>');
+    } else {
+      var regN = username.length;
+      if (regN < 3) {
+        $('#username').after('<span class="error warning">The name must be between 3 and 25 characters</span>');
       }
-    else {
-        var regN = username.length;
-        if (regN < 3) {
-            $('#username').after('<span class="error warning">The name must be between 3 and 25 characters</span>');
-        }
-      }
+    }
     if (phone.length < 1) {
       $('#phone').after('<span class="error">This field is required</span>');
     } else {
@@ -33,6 +32,6 @@ $(document).ready(function () {
       if (!validEmail) {
         $('#email').after('<span class="error">Please enter a valid email address</span>');
       }
-      }
+    }
   });
 });
