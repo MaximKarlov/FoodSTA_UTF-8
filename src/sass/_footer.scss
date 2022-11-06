@@ -13,13 +13,12 @@
     background-image: url(../img/background/footer//tablet_bgi.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 100%;
+    background-size: cover;
   }
   @include desk-min {
     background-image: url(../img/background/footer/desktop_bgi.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 100%;
   }
 }
 .navi {
