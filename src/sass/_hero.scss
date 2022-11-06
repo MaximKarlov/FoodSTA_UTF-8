@@ -15,7 +15,6 @@
 }
 .hero__title {
   @include font(700, 28px, 1.2);
-  max-width: 280px;
   margin-bottom: 28px;
   @include tab-min {
     @include font(700, 42px, 1.2);
@@ -31,7 +30,6 @@
 
 .hero__text {
   @include font(400, 14px, 1.5);
-  max-width: 266px;
   margin-bottom: 28px;
 
   @include tab-min {
@@ -46,15 +44,19 @@
 }
 
 .hero__btn {
-  background: #bbf330;
+  background: var(--btn-order);
   border-radius: 30px;
   padding: 10px 22px;
   border: none;
   text-align: right;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--modal-text-color);
   &:hover,
   &:focus {
-    background: #b5ff00;
+    background: var(--btn-hover);
   }
 }
 .hero__slider {
@@ -87,12 +89,12 @@
 }
 
 .hero__img {
-  border: 14px solid #ffe550;
+  border: 14px solid var(--primary-background);
   border-radius: 50%;
   max-width: 292px;
 
   @include desk-min {
-    border: 26px solid #ffe550;
+    border: 26px solid var(--primary-background);
     max-width: 528px;
   }
 }
@@ -108,15 +110,17 @@
   left: -3px;
   width: 48px;
   height: 40px;
-  background: #fefefe;
+  background: var(--primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
 
   &:hover,
   &:focus {
-    fill: #7eb101;
+    fill: var(--btn-menu);
   }
-
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
   @include tab-max {
     top: calc(50% + 75px);
     padding: 4px 13.5px;
@@ -135,15 +139,17 @@
   right: -6px;
   width: 48px;
   height: 40px;
-  background: #fefefe;
+  background: var(--primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
 
   &:hover,
   &:focus {
-    fill: #7eb101;
+    fill: var(--btn-menu);
   }
-
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
   @include tab-max {
     top: calc(50% + 75px);
     padding: 4px 13.5px;
