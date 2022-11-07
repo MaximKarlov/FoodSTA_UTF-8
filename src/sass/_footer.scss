@@ -30,7 +30,7 @@
     background-image: url(../img/background/footer/desktop_bgi.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: auto;
+    background-size: contain;
     @include retina {
       background-image: url(../img/background/footer/desktop_bgi_2x.jpg);
     }
