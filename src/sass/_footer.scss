@@ -1,5 +1,6 @@
 .foot {
-  width: auto;
+  width: 100%;
+  max-width: 480px;
   margin: 0 auto;
   background-image: url(../img/background/footer/mobile_bgi_bottom.jpg), url(../img/background/footer/mobile_bgi_left.jpg),
     url(../img/background/footer/mobile_bgi_right.jpg);
@@ -13,6 +14,8 @@
   background-size: 70%, 20%, 25%;
 
   @include tab-min {
+    width: 100%;
+    max-width: 768px;
     background-image: url(../img/background/footer//tablet_bgi.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -22,9 +25,12 @@
     }
   }
   @include desk-min {
+    width: 100%;
+    max-width: 1280px;
     background-image: url(../img/background/footer/desktop_bgi.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: auto;
     @include retina {
       background-image: url(../img/background/footer/desktop_bgi_2x.jpg);
     }
