@@ -87,11 +87,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // flex-grow: 1;
-  // max-width: 280px;
   height: auto;
   padding: 8px;
-  border-radius: 0 10% 10% 10%;
+  border-radius: 0 30px 30px 30px;
 
   background-color: var(--primary);
 
@@ -103,7 +101,6 @@
   @include desk-min {
     width: calc((100% - 139px) / 2);
     padding: 14px;
-    border-radius: 0 30px 30px 30px;
   }
 }
 
